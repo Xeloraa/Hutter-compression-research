@@ -1,0 +1,233 @@
+{
+  "dic_words": 44515,
+  "dic_longest": 58,
+  "mark": "0x01+uleb(page_index)",
+  "slices": [
+    {
+      "path": "C:\\Users\\vivi\\hutter\\data\\enwik8.3m",
+      "md5": "a3bf17ae9205c633352d94b5cf106184",
+      "file_bytes": 3000000,
+      "pages": 384,
+      "elapsed_s": 1.32,
+      "overlap_bad": 0,
+      "links": {
+        "n": 29460,
+        "article": 24730,
+        "special": 890,
+        "interwiki": 3820,
+        "empty": 20,
+        "selfpipe": 92,
+        "resolved": 555,
+        "causal": 291,
+        "dangling": 24175
+      },
+      "target_bytes": {
+        "all": 411891,
+        "resolved": 8243,
+        "causal": 4448,
+        "dangling": 320031,
+        "special": 23788,
+        "interwiki": 59829,
+        "disp": 72337,
+        "frag": 3993
+      },
+      "dangling_types": {
+        "n": 24175,
+        "unique": 16062,
+        "extra_copy_bytes": 93450
+      },
+      "gap": {
+        "n": {
+          "future": 254,
+          "gap_le_8m": 301,
+          "gap_8_32m": 0,
+          "gap_32_64m": 0,
+          "gap_gt_64m": 0
+        },
+        "bytes": {
+          "future": 3681,
+          "gap_le_8m": 4562,
+          "gap_8_32m": 0,
+          "gap_32_64m": 0,
+          "gap_gt_64m": 0
+        }
+      },
+      "wrt_on_resolved": {
+        "enc_len_2B_per_word": 3045,
+        "dic_words": 1182,
+        "leftover_letters": 22,
+        "ptr_len": 1629,
+        "n_ptr_beats_wrt": 293,
+        "save_vs_wrt": 1655,
+        "n_ptr_beats_raw": 548,
+        "save_vs_raw": 6615,
+        "n_fully_in_dict": 543,
+        "n_has_oov_or_punct": 12
+      },
+      "lead_bold": {
+        "n": 101,
+        "bytes_incl_quotes": 1850
+      },
+      "rankings": {
+        "link_spans": {
+          "label": "link_spans_resolved_targets_only_in_place",
+          "raw_orig": 611854,
+          "raw_alt": 605240,
+          "raw_delta": 6614,
+          "zlib9_orig": 212791,
+          "zlib9_alt": 212638,
+          "zlib9_delta": 153,
+          "lzma6_orig": 174048,
+          "lzma6_alt": 174024,
+          "lzma6_delta": 24
+        },
+        "resolved_targets": {
+          "label": "resolved_target_strings_vs_uleb",
+          "raw_orig": 8798,
+          "raw_alt": 2184,
+          "raw_delta": 6614,
+          "zlib9_orig": 1486,
+          "zlib9_alt": 681,
+          "zlib9_delta": 805,
+          "lzma6_orig": 1544,
+          "lzma6_alt": 704,
+          "lzma6_delta": 840
+        },
+        "resolved_vs_shuffle": {
+          "label": "resolved_uleb_live_vs_shuffled_ids",
+          "raw_orig": 2184,
+          "raw_alt": 2104,
+          "raw_delta": 80,
+          "zlib9_orig": 681,
+          "zlib9_alt": 709,
+          "zlib9_delta": -28,
+          "lzma6_orig": 704,
+          "lzma6_alt": 728,
+          "lzma6_delta": -24
+        },
+        "whole_zlib": {
+          "label": "whole_file_title_index",
+          "raw_orig": 3000000,
+          "raw_alt": 2993386,
+          "raw_delta": 6614,
+          "zlib9_orig": 1089787,
+          "zlib9_alt": 1089821,
+          "zlib9_delta": -34
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\vivi\\hutter\\data\\enwik8",
+      "md5": "a1fa5ffddb56f4953e226637dabbb36a",
+      "file_bytes": 100000000,
+      "pages": 12344,
+      "elapsed_s": 61.71,
+      "overlap_bad": 0,
+      "links": {
+        "n": 937639,
+        "article": 805646,
+        "special": 35465,
+        "interwiki": 95756,
+        "empty": 772,
+        "selfpipe": 933,
+        "resolved": 112935,
+        "causal": 56791,
+        "dangling": 692711
+      },
+      "target_bytes": {
+        "all": 13019717,
+        "resolved": 1305487,
+        "causal": 645970,
+        "dangling": 9141526,
+        "special": 957026,
+        "interwiki": 1615678,
+        "disp": 2229111,
+        "frag": 137627
+      },
+      "dangling_types": {
+        "n": 692711,
+        "unique": 270494,
+        "extra_copy_bytes": 4856454
+      },
+      "gap": {
+        "n": {
+          "future": 55505,
+          "gap_le_8m": 13510,
+          "gap_8_32m": 19863,
+          "gap_32_64m": 16648,
+          "gap_gt_64m": 7409
+        },
+        "bytes": {
+          "future": 652047,
+          "gap_le_8m": 171650,
+          "gap_8_32m": 222831,
+          "gap_32_64m": 182893,
+          "gap_gt_64m": 76066
+        }
+      },
+      "wrt_on_resolved": {
+        "enc_len_2B_per_word": 466209,
+        "dic_words": 181824,
+        "leftover_letters": 9871,
+        "ptr_len": 338288,
+        "n_ptr_beats_wrt": 52491,
+        "save_vs_wrt": 187663,
+        "n_ptr_beats_raw": 110713,
+        "save_vs_raw": 967462,
+        "n_fully_in_dict": 107783,
+        "n_has_oov_or_punct": 5152
+      },
+      "lead_bold": {
+        "n": 5063,
+        "bytes_incl_quotes": 96404
+      },
+      "rankings": {
+        "link_spans": {
+          "label": "link_spans_resolved_targets_only_in_place",
+          "raw_orig": 19311862,
+          "raw_alt": 18344663,
+          "raw_delta": 967199,
+          "zlib9_orig": 6886226,
+          "zlib9_alt": 6802551,
+          "zlib9_delta": 83675,
+          "lzma6_orig": 4566112,
+          "lzma6_alt": 4548848,
+          "lzma6_delta": 17264
+        },
+        "resolved_targets": {
+          "label": "resolved_target_strings_vs_uleb",
+          "raw_orig": 1418422,
+          "raw_alt": 451223,
+          "raw_delta": 967199,
+          "zlib9_orig": 424696,
+          "zlib9_alt": 211172,
+          "zlib9_delta": 213524,
+          "lzma6_orig": 275408,
+          "lzma6_alt": 169824,
+          "lzma6_delta": 105584
+        },
+        "resolved_vs_shuffle": {
+          "label": "resolved_uleb_live_vs_shuffled_ids",
+          "raw_orig": 451223,
+          "raw_alt": 450446,
+          "raw_delta": 777,
+          "zlib9_orig": 211172,
+          "zlib9_alt": 211420,
+          "zlib9_delta": -248,
+          "lzma6_orig": 169824,
+          "lzma6_alt": 173144,
+          "lzma6_delta": -3320
+        },
+        "whole_zlib": {
+          "label": "whole_file_title_index",
+          "raw_orig": 100000000,
+          "raw_alt": 99032801,
+          "raw_delta": 967199,
+          "zlib9_orig": 36475792,
+          "zlib9_alt": 36450526,
+          "zlib9_delta": 25266
+        }
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@ E30d/e **DONE — STOP**. MinGW E30e **517905 EXACT** (−190 B vs E30d 518095).
 
 ---
 
-**Strategic reset:** do **not** start E41, E35, or E32 on 3 MB. E41 is Class C. Forget-bias series **stopped** at E30e. **A2** and **A3** cheap-filtered on enwik8: **killed as megabyte** (`A2.md`, `A3.md`). Only live A is **A1** tree head **with** SetInput inside cmix-lex (`A1_PATCH.md`). Linux job. Do not drop in `BtLstm` aux=0.
+**Strategic reset:** do **not** start E41, E35, or E32 on 3 MB. E41 is Class C. Forget-bias series **stopped** at E30e. **A2**, **A3**, and **A4** cheap-filtered on enwik8: **killed as megabyte** (`A2.md`, `A3.md`, `A4.md`). Only live A is **A1** tree head **with** SetInput inside cmix-lex (`A1_PATCH.md`). Linux job. Do not drop in `BtLstm` aux=0. Next cheap A *question* (not run): typed body streams (`STRATEGY.md` A5).
 
 ---
 
