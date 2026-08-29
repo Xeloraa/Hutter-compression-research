@@ -19,7 +19,7 @@ to the 3 MB pipeline (E28: b=8 won at 200 KB and lost at 3 MB).
 
 | item | result |
 | --- | --- |
-| `cmp_fb1.exe` | **RUNNING** (pid 23260, started 2026-08-29 12:49, ~1.6 GB RSS) |
+| `cmp_fb1.exe` | **DECOMPRESSING** after compress **518095** in 2121 s (MinGW; not the Linux lock) |
 | 50 KB `lstm_stand` 72c/3L/b=4/fb=0 vs 64c/4L/b=4 | **SKIPPED** — code-only rule while the pipeline job owns the core |
 | `lstm_stand.exe` / `lstm_stand_adam.exe` | exist; not invoked |
 | `work/src` | untouched |

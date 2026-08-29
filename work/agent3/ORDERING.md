@@ -109,9 +109,17 @@ All three are encoder permutations of `<page>` blocks with siteinfo held fixed. 
 
 **Why it might still fail:** (1) 3 MB template DF is sparse (82 distinct first templates, 144 pages with any template); empty-template pages form a large stable clump and can fake “same-class.” (2) OOV Jaccard did **not** rise (0.047 → 0.043) — this is markup locality, not rare-name locality. (3) match model may already find `{{Taxobox` far away. (4) E10's lesson still applies if the residual after DIC inside templates is mostly dictionary words (`name`, `image`, `capital`).
 
-**Cheap next measurement:** on `enwik8.3m` (done) then on a larger prefix **without fxcm**: DF of first-template, prefix-96 and same-template restricted to pages with a *non-empty* template, byte mass of the top repeating templates. Kill O2 if repeating template classes are a rounding error of bytes, or if prefix-96 gain vanishes once empty-template pages are excluded.
+**Cheap next measurement (done, `O2_BYTES.md`):** repeating first-template pages are 57% of this file **because hatnotes dominate**. Split:
 
-**Verdict:** **only ordering idea that still has a mechanism E10 did not kill.** Weak evidence, small n, no codec. Worth one real-regime shot *after* the cheap DF/byte-mass check — not before, and not on 3 MB fxcm.
+- hatnote (`otheruses`, `spoiler`, `wiktionary`, …) repeating-class pages: **30.5% of file**
+- schema (`infobox*` / `taxobox` / `coor*`) repeating-class pages: **13.5% of file**
+- other repeating first-templates: 13.1%
+
+Unmodified O2 (first `{{` of any kind) is **not** schema locality. It clumps unrelated articles that start with `{{otheruses`. **Kill unmodified O2 as a codec run.**
+
+**Modified O2:** key = first infobox/taxobox/coor template, else empty, original index. Inverse still free via `<id>`. Schema-class pages are 13.5% of this prefix — not a rounding error, still match-model-risk, still no 3 MB fxcm. If a codec run is ever justified it is this key vs dump order on **10 MB**, never vs title-lex.
+
+**Verdict:** unmodified first-template **killed** by the byte-mass split. Schema-only O2 remains the leftover ordering experiment.
 
 ### O3 — Stop paying 215,748 B; identity or O1∘O2 as prior; residual perm only if needed
 
@@ -137,7 +145,8 @@ E10's lesson, stated tightly: **grouping pages by title string similarity is red
 | Greedy minhash of full content | **No.** Already worse than title-lex in E3 and would *pay* metadata. Forbidden to repeat. |
 | Interleave redirects with their target articles (alias-bundle / first-hub) | **No** on this slice. Recreates title-lex interleave; article-only body/OOV drop or stay. |
 | O1 schema-stable | **Yes as a constraint** (do not shuffle stubs through prose). **No as a %.** Redirect bytes are 0.27% here. |
-| O2 lead-template | **Provisionally yes**, different covariance from E10 (prefix/template up, title overlap down). Unproven, sparse DF, match-model risk. One cheap DF/byte-mass gate, then at most one 10 MB DIC+fxcm26 compare vs **original**, never vs title-lex. |
+| O2 lead-template (any `{{`) | **No.** Byte-mass gate: 30.5% of the file is repeating **hatnotes**. That is not Taxobox locality. |
+| O2 schema-only (infobox/taxobox/coor) | **Provisionally yes**, 13.5% of file, opposite covariance from E10 still untested on this key. At most one 10 MB DIC+fxcm26 vs original. |
 | O3 drop/residual STARLIT 215,748 B | **Yes as accounting.** Open fact: STARLIT's own order is untested in-regime. Identity is the E10-implied default. |
 
-**Campaign recommendation:** treat original dump order as the incumbent permutation (inverse free, 0 B). Do not spend a 3 MB fxcm run on ordering. If one codec run is ever justified, it is **O2 composed with O1 vs original on 10 MB DIC+fxcm26**, with the 215,748 B STARLIT file counted in S for any arm that still ships a perm. Title-lex stays on the kill list.
+**Campaign recommendation:** treat original dump order as the incumbent permutation (inverse free, 0 B). Do not spend a 3 MB fxcm run on ordering. If one codec run is ever justified, it is **schema-only O2** (infobox/taxobox/coor, not hatnotes) composed with O1 vs original on **10 MB** DIC+fxcm26, with the 215,748 B STARLIT file counted in S for any arm that still ships a perm. Title-lex and unmodified first-template stay on the kill list.

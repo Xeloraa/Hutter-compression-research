@@ -10,16 +10,14 @@ Gate in flight: E30d (fb=1 control) vs E30e (fb=0). Zero CPU. A “win” is E30
 
 ## Verdict (read this first)
 
+**Director override (after E32 collinearity + Agent 4 audit):** do **not** spend the next 3 MB job on filling mixer slots 546–549. Those inputs copy signals already used as mixer *contexts* (E14/E19 class). **COMPOSE-1 after E30 is E35** (`-DLSTM_L2_INPUT=1`, fx2-cmix L2 skip). Mixer-slot fill stays coded, not queued.
+
 | If E30e (forgetBias=0) … | First composition to run | Config |
 |---|---|---|
-| **WINS 3 MB** | **fb=0 + mixer-slot fill** | `92c/3L/b=4/initMul=0.5/fb=0` + `fxcm26_slots.cpp` (n[546..549]) |
-| **LOSES 3 MB** | **mixer-slot fill alone** | locked incumbent `fb=1` + `fxcm26_slots.cpp` (n[546..549]) |
+| **WINS 3 MB** | **fb=0 + E35 L2 LSTM skip** | `92c/3L/b=4/initMul=0.5/fb=0` + `-DLSTM_L2_INPUT=1` |
+| **LOSES 3 MB** | **E35 alone** | locked incumbent `fb=1` + `-DLSTM_L2_INPUT=1` |
 
-Either way: **one new axis**. Do not fold in tree-head Adam on the same run.
-
-**Override if E30 is a wash:** E35 (`stretch(bp)/2` on `mxInputs2.n[17]`) is a closer replica of fx2-cmix than E32 slots 547–549. Prefer E35 as COMPOSE-1 when E32’s 546 is known collinear. Still one axis; still ~free CPU.
-
-Why this pair: forgetBias retunes LSTM *gate dynamics*; mixer fill changes how fxcm *consumes* the LSTM and a few flags. No shared parameters. If both work they should add. Mixer is ~free CPU (four stores); it does not spend the 3.9 h margin.
+Either way: **one new axis**. Do not fold in tree-head Adam or E32 on the same run.
 
 ---
 
@@ -106,13 +104,13 @@ Rule: **do not compose two untested knobs.** Compose a **pipeline winner** with 
 ```
 E30e fb=0 vs E30d fb=1     ← in flight (A)
         │
-        ├─ A wins  → COMPOSE-1: A + mixer fill     (skip mixer-alone; trust orthogonality)
-        │              if COMPOSE-1 > A  → keep; next = + tree-Adam if margin
-        │              if COMPOSE-1 ≤ A  → revert to A; split mixer (547–549, drop 546)
+        ├─ A wins  → COMPOSE-1: A + E35 L2 skip
+        │              if COMPOSE-1 > A  → keep; next = G1 lr or G2 aux
+        │              if COMPOSE-1 ≤ A  → revert to A; try E36 ExpectedByte cxt
         │
-        └─ A loses → COMPOSE-1: mixer fill on locked fb=1
-                       if fill wins → COMPOSE-2: fill + tree-Adam
-                       if fill loses → split 547–549; if still dead → tree-Adam alone
+        └─ A loses → COMPOSE-1: E35 on locked fb=1
+                       if E35 wins → COMPOSE-2: E35 + G1 lr standalone then pipeline
+                       if E35 loses → E36; if still dead → G2 tiny aux
 ```
 
 Do **not** run fb=0 + mixer + tree-Adam in one shot (two untested axes if A just landed; three if A lost).

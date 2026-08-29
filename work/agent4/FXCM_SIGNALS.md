@@ -1,5 +1,7 @@
 # AGENT 4 — FXCM↔LSTM signal archaeology
 
+**Director: do not treat finding 1 (fill n[546..559]) as the next 3 MB experiment.** Those slots as coded in `fxcm26_slots.cpp` are collinear with existing mixer inputs/contexts (E32 / E14). Next mixer-path experiment is **E35 L2 skip**, then **E36 ExpectedByte context**. Compact LSTM aux (finding 4, K=4–8) is the leftover *new information* path (G2), after E30/E35. `wasVerb`/`wasNoun` already died in-regime as mixer flags.
+
 Read-only audit of `work/src/fxcm26_bd92.cpp` (+ `btl-bd.cpp`, `lstm-layer-bd.cpp`, `locked/PROVENANCE.md`, `log/RESEARCH_LOG.md`).  
 Sibling draft already exists: `work/src/fxcm26_slots.cpp` (fills 546–549).  
 Do **not** treat this as a green light to edit `work/src` — notes only.

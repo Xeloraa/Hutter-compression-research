@@ -153,20 +153,22 @@ Standalone 72c/3L b=4, 400 KB DIC (E30c harness):
 
 ## Ranking
 
-| rank | idea | what it attacks | cheapest kill |
+| rank | idea | status | cheapest kill |
 |---|---|---|---|
-| 1 | Word-identity recency cache | E12 distant bucket; fxcm cannot name an id | oracle pointer on `lastCW` stream |
-| 2 | Word-step LSTM | 50-byte horizon; CPU on 0.07 bpb XML | pass-count + bits/word vs byte-LSTM |
-| 3 | Narrow aux (`lastCW` + gap) | net never sees the id | offline mixer / linear probe |
-| 4 | Causal OOV copy | 21.5-bit novel-word bucket, E2's *shipped* vocab | spell-once information budget |
-| 5 | Sticky block + skip-BPTT | E30 over-generalised "forget faster"; budget for 120c | split-bias + skip vs all-0 standalone |
+| 1 | Causal OOV copy, **len>=6 after DIC** | **live ceiling** 0.693% DIC-file vs spelling after LEN=5 | 3 MB mixer expert only if leftover stays after E30/E35 |
+| 2 | Word-step LSTM | 50-byte horizon | pass-count + bits/word vs byte-LSTM |
+| 3 | Narrow aux (`lastCW` + gap) | net never sees the id | G2 after E35; kill if zero-aux control matches |
+| 4 | Word-identity lastCW cache | **KILLED** (gamma and LRU-index) | rare cnt2-5 = 0.18% of raw file vs unigram |
+| 5 | Sticky block + skip-BPTT | E30 over-generalised forget | split-bias standalone after E30 |
 
-If idea 1's oracle dies, ideas 3 and 5's sticky block probably die with it (no identity residual). Idea 4 can still live (OOV ≠ in-dict `lastCW`). Idea 2 can still live as a pure cost play.
+Idea 1 died as lastCW. Idea 4 (OOV) is the remaining identity residual. Idea 3 is not lastCW-as-pointer; it is G2 residual aux.
 
 ---
 
 ## Return (single best)
 
-**Word-identity recency cache (exact `lastCW` ring mixed as a bit expert; neural attention only if exact lives).**
+**Causal OOV copy on DIC-stream letter-runs of length >=6**, mixed as a bit expert, not lastCW.
 
-**Falsify:** unbounded gap-pointer information budget on the causal `lastCW` stream of a 2–10 MB DIC prefix. Kill if oracle <0.4% of file bits, or if the gain is already concentrated at K≤64.
+lastCW gamma and LRU-index both failed the rare-identity test (`IDENTITY.md`). The leftover is spelled names after DIC whose LEN=5 prefix does not match (`OOV.md`): ~12.6 KB ceiling vs 8-bit spelling.
+
+**Falsify in-pipeline:** one mixer expert on those tokens after E30/E35. Kill if archive delta <100 B vs the same-compiler control.
