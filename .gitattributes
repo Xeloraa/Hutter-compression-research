@@ -1,0 +1,4 @@
+# Keep DIC prefixes and the word list byte-exact.
+*.bin binary
+english.dic binary
+locked/english.dic binary

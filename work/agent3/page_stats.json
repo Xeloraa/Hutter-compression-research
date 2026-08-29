@@ -1,0 +1,713 @@
+{
+  "corpus": "C:\\Users\\vivi\\hutter\\data\\enwik8.3m",
+  "file_bytes": 3000000,
+  "complete_pages": 384,
+  "ids_strictly_ascending": true,
+  "id_min": 1,
+  "id_max": 840,
+  "class_counts": {
+    "redirect": 215,
+    "article": 141,
+    "infobox": 22,
+    "disambig": 5,
+    "list": 1
+  },
+  "n_redirects": 215,
+  "n_redirect_targets": 166,
+  "targets_with_ge2_redirects": 41,
+  "redirects_in_multi_target_bundles": 90,
+  "top_redirect_targets": [
+    [
+      "Analysis of variance",
+      5
+    ],
+    [
+      "Constructed language",
+      4
+    ],
+    [
+      "Actor",
+      4
+    ],
+    [
+      "Foreign relations of Andorra",
+      3
+    ],
+    [
+      "History of Afghanistan",
+      2
+    ],
+    [
+      "Geography of Afghanistan",
+      2
+    ],
+    [
+      "Demographics of Afghanistan",
+      2
+    ],
+    [
+      "Economy of Afghanistan",
+      2
+    ]
+  ],
+  "n_distinct_first_templates": 82,
+  "top_templates": [
+    [
+      "otheruses",
+      11
+    ],
+    [
+      "taxobox",
+      9
+    ],
+    [
+      "disambig",
+      7
+    ],
+    [
+      "imdb name",
+      4
+    ],
+    [
+      "spoiler",
+      4
+    ],
+    [
+      "coor dm",
+      4
+    ],
+    [
+      "r from camelcase",
+      3
+    ],
+    [
+      "otheruses1",
+      3
+    ],
+    [
+      "wiktionary",
+      3
+    ],
+    [
+      "featured article",
+      3
+    ],
+    [
+      "infobox_country",
+      3
+    ],
+    [
+      "mergefrom",
+      3
+    ]
+  ],
+  "pages_with_template": 144,
+  "mean_page_bytes": 7247.3,
+  "median_page_bytes": 46,
+  "mean_redir_bytes": 34.7,
+  "mean_article_bytes": 14378.9,
+  "byte_mass_by_class": {
+    "redirect": 7455,
+    "article": 2027418,
+    "infobox": 735268,
+    "disambig": 10037,
+    "list": 2770
+  },
+  "byte_mass_redirect_frac": 0.0027,
+  "n_nonredirect": 169,
+  "article_only_orders": {
+    "original": {
+      "mean_jaccard_body": 0.09415,
+      "mean_jaccard_in_dic": 0.10369,
+      "mean_jaccard_oov": 0.04702,
+      "mean_jaccard_title": 0.05136,
+      "mean_prefix96": 0.0651,
+      "frac_same_class": 0.7917,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.0357,
+      "frac_adj_shared_title_token": 0.1131,
+      "median_jaccard_body": 0.09011,
+      "class_runs": {
+        "n_runs": 36,
+        "mean_run": 4.694,
+        "max_run": 16,
+        "frac_in_run_ge2": 0.929
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 163,
+        "mean_run": 1.037,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0592
+      }
+    },
+    "title_lex_KILLED": {
+      "mean_jaccard_body": 0.08347,
+      "mean_jaccard_in_dic": 0.09213,
+      "mean_jaccard_oov": 0.03953,
+      "mean_jaccard_title": 0.06371,
+      "mean_prefix96": 0.0475,
+      "frac_same_class": 0.7143,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.0119,
+      "frac_adj_shared_title_token": 0.1667,
+      "median_jaccard_body": 0.07992,
+      "class_runs": {
+        "n_runs": 49,
+        "mean_run": 3.449,
+        "max_run": 29,
+        "frac_in_run_ge2": 0.8462
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 167,
+        "mean_run": 1.012,
+        "max_run": 2,
+        "frac_in_run_ge2": 0.0237
+      }
+    },
+    "schema_stable": {
+      "mean_jaccard_body": 0.09837,
+      "mean_jaccard_in_dic": 0.10866,
+      "mean_jaccard_oov": 0.04816,
+      "mean_jaccard_title": 0.05334,
+      "mean_prefix96": 0.06324,
+      "frac_same_class": 0.9821,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.0655,
+      "frac_adj_shared_title_token": 0.119,
+      "median_jaccard_body": 0.09255,
+      "class_runs": {
+        "n_runs": 4,
+        "mean_run": 42.25,
+        "max_run": 141,
+        "frac_in_run_ge2": 0.9941
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 158,
+        "mean_run": 1.07,
+        "max_run": 5,
+        "frac_in_run_ge2": 0.1006
+      }
+    },
+    "alias_bundle": {
+      "mean_jaccard_body": 0.09415,
+      "mean_jaccard_in_dic": 0.10369,
+      "mean_jaccard_oov": 0.04702,
+      "mean_jaccard_title": 0.05136,
+      "mean_prefix96": 0.0651,
+      "frac_same_class": 0.7917,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.0357,
+      "frac_adj_shared_title_token": 0.1131,
+      "median_jaccard_body": 0.09011,
+      "class_runs": {
+        "n_runs": 36,
+        "mean_run": 4.694,
+        "max_run": 16,
+        "frac_in_run_ge2": 0.929
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 163,
+        "mean_run": 1.037,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0592
+      }
+    },
+    "first_template_stable": {
+      "mean_jaccard_body": 0.09629,
+      "mean_jaccard_in_dic": 0.10752,
+      "mean_jaccard_oov": 0.04338,
+      "mean_jaccard_title": 0.02914,
+      "mean_prefix96": 0.10069,
+      "frac_same_class": 0.9167,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.3571,
+      "frac_adj_shared_title_token": 0.0655,
+      "median_jaccard_body": 0.09447,
+      "class_runs": {
+        "n_runs": 15,
+        "mean_run": 11.267,
+        "max_run": 71,
+        "frac_in_run_ge2": 0.9822
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 109,
+        "mean_run": 1.55,
+        "max_run": 11,
+        "frac_in_run_ge2": 0.5089
+      }
+    },
+    "first_hub_stable": {
+      "mean_jaccard_body": 0.08757,
+      "mean_jaccard_in_dic": 0.09686,
+      "mean_jaccard_oov": 0.04101,
+      "mean_jaccard_title": 0.04114,
+      "mean_prefix96": 0.07168,
+      "frac_same_class": 0.6964,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.0238,
+      "frac_adj_shared_title_token": 0.0833,
+      "median_jaccard_body": 0.08487,
+      "class_runs": {
+        "n_runs": 52,
+        "mean_run": 3.25,
+        "max_run": 20,
+        "frac_in_run_ge2": 0.8284
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 165,
+        "mean_run": 1.024,
+        "max_run": 3,
+        "frac_in_run_ge2": 0.0414
+      }
+    },
+    "schema_then_redir_target": {
+      "mean_jaccard_body": 0.09837,
+      "mean_jaccard_in_dic": 0.10866,
+      "mean_jaccard_oov": 0.04816,
+      "mean_jaccard_title": 0.05334,
+      "mean_prefix96": 0.06324,
+      "frac_same_class": 0.9821,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.0655,
+      "frac_adj_shared_title_token": 0.119,
+      "median_jaccard_body": 0.09255,
+      "class_runs": {
+        "n_runs": 4,
+        "mean_run": 42.25,
+        "max_run": 141,
+        "frac_in_run_ge2": 0.9941
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 158,
+        "mean_run": 1.07,
+        "max_run": 5,
+        "frac_in_run_ge2": 0.1006
+      }
+    },
+    "title_token_clusters": {
+      "mean_jaccard_body": 0.09503,
+      "mean_jaccard_in_dic": 0.10462,
+      "mean_jaccard_oov": 0.04674,
+      "mean_jaccard_title": 0.08499,
+      "mean_prefix96": 0.06126,
+      "frac_same_class": 0.7619,
+      "frac_same_redir_target": 0.0,
+      "frac_same_template": 0.0298,
+      "frac_adj_shared_title_token": 0.2083,
+      "median_jaccard_body": 0.09057,
+      "class_runs": {
+        "n_runs": 41,
+        "mean_run": 4.122,
+        "max_run": 28,
+        "frac_in_run_ge2": 0.8994
+      },
+      "redir_target_runs": {
+        "n_runs": 169,
+        "mean_run": 1.0,
+        "max_run": 1,
+        "frac_in_run_ge2": 0.0
+      },
+      "template_runs": {
+        "n_runs": 164,
+        "mean_run": 1.03,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0473
+      }
+    }
+  },
+  "original_max_redirect_run": 53,
+  "title_cluster": {
+    "n_components": 232,
+    "n_nontrivial": 36,
+    "largest": 83,
+    "mean_size": 1.655,
+    "pages_in_nontrivial": 188
+  },
+  "orders": {
+    "original": {
+      "mean_jaccard_body": 0.1914,
+      "mean_jaccard_in_dic": 0.19651,
+      "mean_jaccard_oov": 0.39836,
+      "mean_jaccard_title": 0.09788,
+      "mean_prefix96": 0.20352,
+      "frac_same_class": 0.6554,
+      "frac_same_redir_target": 0.0183,
+      "frac_same_template": 0.0183,
+      "frac_adj_shared_title_token": 0.248,
+      "median_jaccard_body": 0.12109,
+      "class_runs": {
+        "n_runs": 133,
+        "mean_run": 2.887,
+        "max_run": 53,
+        "frac_in_run_ge2": 0.8125
+      },
+      "redir_target_runs": {
+        "n_runs": 377,
+        "mean_run": 1.019,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0286
+      },
+      "template_runs": {
+        "n_runs": 377,
+        "mean_run": 1.019,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0312
+      },
+      "mean_abs_index_shift": 0.0,
+      "median_abs_index_shift": 0,
+      "max_abs_index_shift": 0,
+      "frac_original_adjacencies_kept": 1.0
+    },
+    "title_lex_KILLED": {
+      "mean_jaccard_body": 0.20677,
+      "mean_jaccard_in_dic": 0.21213,
+      "mean_jaccard_oov": 0.36633,
+      "mean_jaccard_title": 0.1667,
+      "mean_prefix96": 0.20234,
+      "frac_same_class": 0.5875,
+      "frac_same_redir_target": 0.0496,
+      "frac_same_template": 0.0052,
+      "frac_adj_shared_title_token": 0.3499,
+      "median_jaccard_body": 0.09206,
+      "class_runs": {
+        "n_runs": 159,
+        "mean_run": 2.415,
+        "max_run": 19,
+        "frac_in_run_ge2": 0.7604
+      },
+      "redir_target_runs": {
+        "n_runs": 365,
+        "mean_run": 1.052,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0885
+      },
+      "template_runs": {
+        "n_runs": 382,
+        "mean_run": 1.005,
+        "max_run": 2,
+        "frac_in_run_ge2": 0.0104
+      },
+      "mean_abs_index_shift": 109.47,
+      "median_abs_index_shift": 80,
+      "max_abs_index_shift": 333,
+      "frac_original_adjacencies_kept": 0.0757
+    },
+    "schema_stable": {
+      "mean_jaccard_body": 0.23472,
+      "mean_jaccard_in_dic": 0.24252,
+      "mean_jaccard_oov": 0.52243,
+      "mean_jaccard_title": 0.09053,
+      "mean_prefix96": 0.26025,
+      "frac_same_class": 0.9896,
+      "frac_same_redir_target": 0.0209,
+      "frac_same_template": 0.0313,
+      "frac_adj_shared_title_token": 0.2402,
+      "median_jaccard_body": 0.16667,
+      "class_runs": {
+        "n_runs": 5,
+        "mean_run": 76.8,
+        "max_run": 215,
+        "frac_in_run_ge2": 0.9974
+      },
+      "redir_target_runs": {
+        "n_runs": 376,
+        "mean_run": 1.021,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0339
+      },
+      "template_runs": {
+        "n_runs": 372,
+        "mean_run": 1.032,
+        "max_run": 5,
+        "frac_in_run_ge2": 0.0495
+      },
+      "mean_abs_index_shift": 63.68,
+      "median_abs_index_shift": 62,
+      "max_abs_index_shift": 237,
+      "frac_original_adjacencies_kept": 0.6554
+    },
+    "alias_bundle": {
+      "mean_jaccard_body": 0.19325,
+      "mean_jaccard_in_dic": 0.19739,
+      "mean_jaccard_oov": 0.35139,
+      "mean_jaccard_title": 0.1106,
+      "mean_prefix96": 0.19249,
+      "frac_same_class": 0.5457,
+      "frac_same_redir_target": 0.0444,
+      "frac_same_template": 0.0131,
+      "frac_adj_shared_title_token": 0.2507,
+      "median_jaccard_body": 0.07531,
+      "class_runs": {
+        "n_runs": 175,
+        "mean_run": 2.194,
+        "max_run": 28,
+        "frac_in_run_ge2": 0.7135
+      },
+      "redir_target_runs": {
+        "n_runs": 367,
+        "mean_run": 1.046,
+        "max_run": 5,
+        "frac_in_run_ge2": 0.0755
+      },
+      "template_runs": {
+        "n_runs": 379,
+        "mean_run": 1.013,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0208
+      },
+      "mean_abs_index_shift": 28.88,
+      "median_abs_index_shift": 16,
+      "max_abs_index_shift": 332,
+      "frac_original_adjacencies_kept": 0.6736
+    },
+    "first_template_stable": {
+      "mean_jaccard_body": 0.2206,
+      "mean_jaccard_in_dic": 0.22703,
+      "mean_jaccard_oov": 0.47935,
+      "mean_jaccard_title": 0.08278,
+      "mean_prefix96": 0.25629,
+      "frac_same_class": 0.8512,
+      "frac_same_redir_target": 0.0209,
+      "frac_same_template": 0.1619,
+      "frac_adj_shared_title_token": 0.2219,
+      "median_jaccard_body": 0.14463,
+      "class_runs": {
+        "n_runs": 58,
+        "mean_run": 6.621,
+        "max_run": 84,
+        "frac_in_run_ge2": 0.9401
+      },
+      "redir_target_runs": {
+        "n_runs": 376,
+        "mean_run": 1.021,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.0339
+      },
+      "template_runs": {
+        "n_runs": 322,
+        "mean_run": 1.193,
+        "max_run": 11,
+        "frac_in_run_ge2": 0.2318
+      },
+      "mean_abs_index_shift": 120.02,
+      "median_abs_index_shift": 129,
+      "max_abs_index_shift": 322,
+      "frac_original_adjacencies_kept": 0.4804
+    },
+    "first_hub_stable": {
+      "mean_jaccard_body": 0.25647,
+      "mean_jaccard_in_dic": 0.26436,
+      "mean_jaccard_oov": 0.42105,
+      "mean_jaccard_title": 0.07558,
+      "mean_prefix96": 0.31245,
+      "frac_same_class": 0.6971,
+      "frac_same_redir_target": 0.1097,
+      "frac_same_template": 0.0104,
+      "frac_adj_shared_title_token": 0.1723,
+      "median_jaccard_body": 0.125,
+      "class_runs": {
+        "n_runs": 117,
+        "mean_run": 3.282,
+        "max_run": 28,
+        "frac_in_run_ge2": 0.8516
+      },
+      "redir_target_runs": {
+        "n_runs": 342,
+        "mean_run": 1.123,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.2031
+      },
+      "template_runs": {
+        "n_runs": 380,
+        "mean_run": 1.011,
+        "max_run": 3,
+        "frac_in_run_ge2": 0.0182
+      },
+      "mean_abs_index_shift": 118.12,
+      "median_abs_index_shift": 96,
+      "max_abs_index_shift": 356,
+      "frac_original_adjacencies_kept": 0.0679
+    },
+    "schema_then_redir_target": {
+      "mean_jaccard_body": 0.30754,
+      "mean_jaccard_in_dic": 0.31782,
+      "mean_jaccard_oov": 0.51982,
+      "mean_jaccard_title": 0.08459,
+      "mean_prefix96": 0.36756,
+      "frac_same_class": 0.9896,
+      "frac_same_redir_target": 0.1253,
+      "frac_same_template": 0.0287,
+      "frac_adj_shared_title_token": 0.1984,
+      "median_jaccard_body": 0.1687,
+      "class_runs": {
+        "n_runs": 5,
+        "mean_run": 76.8,
+        "max_run": 215,
+        "frac_in_run_ge2": 0.9974
+      },
+      "redir_target_runs": {
+        "n_runs": 336,
+        "mean_run": 1.143,
+        "max_run": 5,
+        "frac_in_run_ge2": 0.2318
+      },
+      "template_runs": {
+        "n_runs": 373,
+        "mean_run": 1.029,
+        "max_run": 5,
+        "frac_in_run_ge2": 0.0443
+      },
+      "mean_abs_index_shift": 91.31,
+      "median_abs_index_shift": 76,
+      "max_abs_index_shift": 320,
+      "frac_original_adjacencies_kept": 0.2846
+    },
+    "title_token_clusters": {
+      "mean_jaccard_body": 0.19042,
+      "mean_jaccard_in_dic": 0.19511,
+      "mean_jaccard_oov": 0.3859,
+      "mean_jaccard_title": 0.15552,
+      "mean_prefix96": 0.19552,
+      "frac_same_class": 0.6162,
+      "frac_same_redir_target": 0.0261,
+      "frac_same_template": 0.0157,
+      "frac_adj_shared_title_token": 0.3525,
+      "median_jaccard_body": 0.1048,
+      "class_runs": {
+        "n_runs": 148,
+        "mean_run": 2.595,
+        "max_run": 25,
+        "frac_in_run_ge2": 0.7734
+      },
+      "redir_target_runs": {
+        "n_runs": 374,
+        "mean_run": 1.027,
+        "max_run": 5,
+        "frac_in_run_ge2": 0.0417
+      },
+      "template_runs": {
+        "n_runs": 378,
+        "mean_run": 1.016,
+        "max_run": 4,
+        "frac_in_run_ge2": 0.026
+      },
+      "mean_abs_index_shift": 67.74,
+      "median_abs_index_shift": 68,
+      "max_abs_index_shift": 213,
+      "frac_original_adjacencies_kept": 0.6345
+    }
+  },
+  "head_original": [
+    "redirect:AaA",
+    "redirect:AlgeriA",
+    "redirect:AmericanSamoa",
+    "redirect:AppliedEthics",
+    "redirect:AccessibleComputing",
+    "redirect:AdA",
+    "article:Anarchism",
+    "redirect:AfghanistanHistory",
+    "redirect:AfghanistanGeography",
+    "redirect:AfghanistanPeople",
+    "redirect:AfghanistanEconomy",
+    "redirect:AfghanistanCommunications"
+  ],
+  "head_schema": [
+    "redirect:AaA",
+    "redirect:AlgeriA",
+    "redirect:AmericanSamoa",
+    "redirect:AppliedEthics",
+    "redirect:AccessibleComputing",
+    "redirect:AdA",
+    "redirect:AfghanistanHistory",
+    "redirect:AfghanistanGeography",
+    "redirect:AfghanistanPeople",
+    "redirect:AfghanistanEconomy",
+    "redirect:AfghanistanCommunications",
+    "redirect:AfghanistanTransportations"
+  ],
+  "head_alias": [
+    "redirect:AaA",
+    "redirect:AppliedEthics",
+    "redirect:AdA",
+    "article:Anarchism",
+    "redirect:AfghanistanHistory",
+    "redirect:AfghanistanGeography",
+    "redirect:AfghanistanPeople",
+    "redirect:AfghanistanEconomy",
+    "redirect:AfghanistanCommunications",
+    "redirect:AfghanistanTransportations",
+    "redirect:AfghanistanMilitary",
+    "redirect:AfghanistanTransnationalIssues"
+  ],
+  "head_template": [
+    "article:Abacus",
+    "article:American football",
+    "article:Demographics of Angola",
+    "article:Communications in Angola",
+    "article:America the Beautiful",
+    "article:Anarchism",
+    "article:A",
+    "article:Transport in Angola",
+    "article:Answer",
+    "article:Aardvark",
+    "article:Asia",
+    "article:Aikido"
+  ],
+  "head_titlelex": [
+    "article:A",
+    "article:A Modest Proposal",
+    "redirect:A.E. van Vogt",
+    "article:Aa River",
+    "redirect:AaA",
+    "redirect:AardvarK",
+    "article:Aardvark",
+    "redirect:AardwolF",
+    "article:Aardwolf",
+    "redirect:AbacuS",
+    "article:Abacus",
+    "redirect:AbadanIran"
+  ],
+  "note": "Jaccard overlap is a locality proxy only. It is not a compression gain. E10 killed title-lex on DIC+fxcm26; in-dic Jaccard is the quantity DIC already globalizes."
+}

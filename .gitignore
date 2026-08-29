@@ -1,0 +1,34 @@
+# Local-only corpora, build products, and experiment binaries.
+# enwik8/enwik9 are obtained from the official Hutter Prize dump; do not commit them.
+
+/data/enwik*
+/data/*.zip
+/data/*.round
+
+# Rebuilt binaries
+*.exe
+*.o
+*.obj
+*.a
+*.dll
+*.pdb
+*.ilk
+
+/work/obj/
+/work/runs/
+/work/cmp_fb0.exe
+/work/cmp_fb1.exe
+/work/dicprep.exe
+/work/cmp_e35.exe
+/tools/lstm_stand.exe
+/tools/lstm_stand_adam.exe
+
+# Duplicate of root/locked dictionary copy used as CWD for cmp
+/work/english.dic
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

@@ -1,0 +1,11 @@
+4425c70a43800387478179e74fbea681  src/btl-bd.cpp
+750d037d0600fa5454ddd2ec757ddb84  src/fxcm26_bd92.cpp
+f886fe60976f71e346aa0fa5a2334807  src/lstm-layer-bd.cpp
+e5c3853a927e83c5797a648938b06f2a  src/sigmoid.cpp
+e14266705be4ea5511d57aac7c5b41ba  src/btl-bd.h
+7819ff3e269795cc8d624b3136756651  src/lstm-layer-bd.h
+a62d98325dbf957ec6bd66e9bce1ab33  src/sigmoid.h
+7b6313123b2211a95411d1d83d7d2a40  dic/dictionary.cpp
+bf8bac2e980f2fc43f1229bab867b400  dic/main.cpp
+5caf939c2f2a7fc4e39cb408f7208c6c  dic/dictionary.h
+b3a9cf9fac570b2dc9a0375534792980  english.dic

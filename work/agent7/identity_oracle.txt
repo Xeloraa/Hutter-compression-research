@@ -1,0 +1,16 @@
+dic_bytes=1814514 vocab=44515 tokens=391028 first=20946 second=370082
+unigram_bits=4124227 bpt=10.5471
+unbounded_pointer_ALWAYS=6281460 bpt=16.0640 vs_uni=-2157233
+MIX min(uni,gamma) bits=3818741 bpt=9.7659 save=305486 (7.41% of unigram) pointer_wins=75262
+rare<=5 pointer_wins n=3793 save_bits=27920
+rare<=5 AND gap>256 pointer_wins n=11489 save_bits=0
+bucket hapax n=6621 second=0 uni_bpt=18.577 mix_bpt=18.577 save=0
+bucket cnt2-5 n=22977 second=15282 uni_bpt=16.913 mix_bpt=15.698 save=27920
+bucket cnt6-20 n=44732 second=40473 uni_bpt=15.079 mix_bpt=13.767 save=58696
+bucket cnt>20 n=316698 second=314327 uni_bpt=9.277 mix_bpt=8.586 save=218871
+K=64 FORCE-pointer-if-in-K bits=4369704 bpt=11.1749 hits=165746 hitrate=0.424 vs_uni=-245477
+K=256 FORCE-pointer-if-in-K bits=4607660 bpt=11.7835 hits=220251 hitrate=0.563 vs_uni=-483433
+K=1024 FORCE-pointer-if-in-K bits=4925999 bpt=12.5976 hits=264894 hitrate=0.677 vs_uni=-801772
+K=4096 FORCE-pointer-if-in-K bits=5307314 bpt=13.5727 hits=302615 hitrate=0.774 vs_uni=-1183087
+K=16384 FORCE-pointer-if-in-K bits=5716409 bpt=14.6189 hits=333993 hitrate=0.854 vs_uni=-1592182
+K=65536 FORCE-pointer-if-in-K bits=6093969 bpt=15.5845 hits=358220 hitrate=0.916 vs_uni=-1969742
