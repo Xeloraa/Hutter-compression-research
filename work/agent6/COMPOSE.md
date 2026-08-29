@@ -10,12 +10,12 @@ Gate in flight: E30d (fb=1 control) vs E30e (fb=0). Zero CPU. A “win” is E30
 
 ## Verdict (read this first)
 
-**Director override (after E32 collinearity + Agent 4 audit):** do **not** spend the next 3 MB job on filling mixer slots 546–549. Those inputs copy signals already used as mixer *contexts* (E14/E19 class). **COMPOSE-1 after E30 is E35** (`-DLSTM_L2_INPUT=1`, fx2-cmix L2 skip). Mixer-slot fill stays coded, not queued.
+**After E30:** next 3 MB job is **E41 OOV pointer** (new reversible stage, −14,407 B DIC input, exact), not mixer-slot fill and not E35. E35 remains the first mixer-path exploit if E41 <100 B.
 
-| If E30e (forgetBias=0) … | First composition to run | Config |
+| If E30e (forgetBias=0) … | First 3 MB after the pair | Config |
 |---|---|---|
-| **WINS 3 MB** | **fb=0 + E35 L2 LSTM skip** | `92c/3L/b=4/initMul=0.5/fb=0` + `-DLSTM_L2_INPUT=1` |
-| **LOSES 3 MB** | **E35 alone** | locked incumbent `fb=1` + `-DLSTM_L2_INPUT=1` |
+| **WINS 3 MB** | **fb=0 + E41 oovptr** | winning fb on pointer stream vs vanilla |
+| **LOSES 3 MB** | **fb=1 + E41 oovptr** | same |
 
 Either way: **one new axis**. Do not fold in tree-head Adam or E32 on the same run.
 

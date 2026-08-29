@@ -6,11 +6,15 @@ In-flight (do not start a second 3MB job until this lands): **E30d forgetBias=1 
 
 ---
 
-## Single next experiment after E30d/e
+**Single next 3MB job after E30d/e:** **E41 OOV pointer** (DIC stream, len>=6, exact −14,407 B input, C++ roundtrip EXACT), not E35. E35 is still the first *mixer* exploit if E41 loses or is a wash.
 
-**E33 — learning-rate sweep at the forgetBias that wins the 3MB A/B.**
+E41 protocol: same-compiler `cmp` (winning forgetBias) on `enwik8.3m.dic.oovptr` vs the E30 vanilla archive. Kill if archive delta <100 B. oovptr.cpp ships in the compressor for a real S; lab ranking is archive bytes only.
 
-Not another width point. `lr=0.03` is cmix’s default for a *different* LSTM (256-softmax, aux=256, 2×200c, horizon 100). This stack is tree-head, aux=0, block-diagonal b=4, initMul=0.5, 3×92c, horizon 50 — and after E30 the forget-gate scale may change again. Gradient *magnitude* has never been measured on this stack. E26 (initMul) already showed that “Xavier says bigger” was the wrong direction; lr is the online counterpart and is still the donor default.
+---
+
+## G1 — learning-rate sweep (standalone, after E41 is queued or killed)
+
+Not another width point. `lr=0.03` is cmix’s default for a *different* LSTM.
 
 **Protocol (standalone first; 3MB only if it survives):**
 

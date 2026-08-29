@@ -20,3 +20,4 @@ Incumbent: 517,996 bytes (92c/3L/b=4/initMul=0.5) LOCKED
 | E38b | DIC-stream OOV + LEN=5 overlap | enwik8.3m.dic | a-z runs not in dic | n/a | n/a | n/a | PROMISING ceiling: len>=6 leftover 0.693% DIC-file after any-prior LEN=5 |
 | E39 | lastCW LRU-index recode | lastCW stream | 1+log2(K) vs unigram | n/a | n/a | n/a | KILLED (rare cnt2-5 = 0.18% of raw file; mass still frequent words) |
 | E40 | O2 first-template byte mass | enwik8.3m pages | no fxcm | n/a | n/a | n/a | unmodified O2 KILLED (hatnotes 30.5%); schema-only leftover |
+| E41 | reversible OOV pointer min_len=6 | enwik8.3m.dic | MARK+uleb rank | n/a (DIC -14407 B, EXACT) | n/a | n/a | C++ EXACT; 3MB fxcm after E30 |
