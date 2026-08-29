@@ -38,4 +38,4 @@ Exploit on 92c/forget/mixer slots can move hundreds of bytes on 3 MB. The prize-
 
 ### Exploit track (3 MB)
 
-E30d recorded (MinGW 518095 EXACT). E30e in flight — **record then stop**. Do not start E35/E32/E41. See `STRATEGY.md` and `INTEGRATION.md`.
+E30d recorded (MinGW 518095 EXACT). E30e **517905 EXACT** (886 s / 817 s, −190 B vs E30d MinGW). Forget-bias series **STOPPED**. Class C. A2 cheap filter killed as megabyte (`A2.md`). Do not start E35/E32/E41. Do not replace `locked/`.

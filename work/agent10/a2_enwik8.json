@@ -1,0 +1,217 @@
+{
+  "file": "C:\\Users\\vivi\\hutter\\data\\enwik8",
+  "md5": "a1fa5ffddb56f4953e226637dabbb36a",
+  "bytes": 100000000,
+  "complete_pages": 12344,
+  "elapsed_s": 38.37,
+  "classes": {
+    "redirect": 3664,
+    "article": 7803,
+    "infobox": 646,
+    "disambig": 97,
+    "list": 134
+  },
+  "class_bytes": {
+    "redirect": 119064,
+    "article": 80362864,
+    "infobox": 13447267,
+    "disambig": 121631,
+    "list": 1294152
+  },
+  "dups": {
+    "page_bodies": {
+      "n": 12344,
+      "unique": 11711,
+      "extra": 37156
+    },
+    "long_lines_ge24": {
+      "n": 511427,
+      "unique": 483455,
+      "extra": 1212438
+    },
+    "infobox_exact": {
+      "n": 961,
+      "unique": 869,
+      "extra": 1724
+    },
+    "cite_exact": {
+      "n": 1777,
+      "unique": 1706,
+      "extra": 10703
+    },
+    "category_titles": {
+      "n": 25120,
+      "unique": 12141,
+      "extra": 228534
+    },
+    "interwiki": {
+      "n": 94657,
+      "unique": 94481,
+      "extra": 3475
+    },
+    "usernames": {
+      "n": 9383,
+      "unique": 3683,
+      "extra": 51459
+    },
+    "ips": {
+      "n": 2961,
+      "unique": 1992,
+      "extra": 15908
+    },
+    "internal_link_titles": {
+      "n": 798906,
+      "unique": 261230,
+      "extra": 6176056
+    },
+    "exact_wikilink_spans": {
+      "n": 910021,
+      "unique": 439547,
+      "extra": 7575250
+    },
+    "infobox_skeletons": {
+      "n": 861,
+      "unique": 510,
+      "extra": 54032
+    },
+    "infobox_field_values_ge8": {
+      "n": 9142,
+      "unique": 7390,
+      "extra": 30319
+    },
+    "redirect_targets": {
+      "n": 3642,
+      "unique": 2883,
+      "extra": 14277
+    },
+    "revision_headers": {
+      "n": 12344,
+      "unique": 11451,
+      "extra": 35124
+    }
+  },
+  "coverage": {
+    "pages_with_category": 7783,
+    "pages_with_interwiki": 7129,
+    "pages_with_infobox_template": 846,
+    "infobox_embedded_bytes": 618999,
+    "category_embedded_bytes": 499491,
+    "near_dup_infobox_same_skeleton_n": 468,
+    "near_dup_infobox_payload_bytes": 148098,
+    "ns_present": 0,
+    "username_present": 9383
+  },
+  "ranks": [
+    {
+      "label": "category_lists_per_page",
+      "raw_orig": 474371,
+      "raw_lex": 474371,
+      "zlib9_orig": 138825,
+      "zlib9_lex": 116200,
+      "zlib9_delta": 22625,
+      "lzma6_orig": 99940,
+      "lzma6_lex": 93236,
+      "lzma6_delta": 6704,
+      "both_gain": true,
+      "both_lose": false,
+      "n_blocks": 7783,
+      "side_est": 12575
+    },
+    {
+      "label": "interwiki_lists_per_page",
+      "raw_orig": 1751512,
+      "raw_lex": 1751512,
+      "zlib9_orig": 724311,
+      "zlib9_lex": 715778,
+      "zlib9_delta": 8533,
+      "lzma6_orig": 534196,
+      "lzma6_lex": 526308,
+      "lzma6_delta": 7888,
+      "both_gain": true,
+      "both_lose": false,
+      "n_blocks": 7129,
+      "side_est": 11405
+    },
+    {
+      "label": "infobox_blobs_payload_lex",
+      "raw_orig": 619960,
+      "raw_lex": 619960,
+      "zlib9_orig": 200099,
+      "zlib9_lex": 168518,
+      "zlib9_delta": 31581,
+      "lzma6_orig": 147448,
+      "lzma6_lex": 141840,
+      "lzma6_delta": 5608,
+      "both_gain": true,
+      "both_lose": false,
+      "n_blocks": 961,
+      "side_est": 1190
+    },
+    {
+      "label": "revision_header_contributor_lex",
+      "raw_orig": 421869,
+      "raw_lex": 421869,
+      "zlib9_orig": 130422,
+      "zlib9_lex": 104033,
+      "zlib9_delta": 26389,
+      "lzma6_orig": 98336,
+      "lzma6_lex": 79376,
+      "lzma6_delta": 18960,
+      "both_gain": true,
+      "both_lose": false,
+      "n_blocks": 12344,
+      "side_est": 20971
+    },
+    {
+      "label": "cite_templates_lex",
+      "raw_orig": 364942,
+      "raw_lex": 364942,
+      "zlib9_orig": 112458,
+      "zlib9_lex": 107667,
+      "zlib9_delta": 4791,
+      "lzma6_orig": 93524,
+      "lzma6_lex": 91844,
+      "lzma6_delta": 1680,
+      "both_gain": true,
+      "both_lose": false,
+      "n_blocks": 1777,
+      "side_est": 2397
+    },
+    {
+      "label": "internal_link_targets_global_sort",
+      "raw_orig": 11146276,
+      "raw_lex": 11146276,
+      "zlib9_orig": 4238311,
+      "zlib9_lex": 1742609,
+      "zlib9_delta": 2495702,
+      "lzma6_orig": 2884332,
+      "lzma6_lex": 1358800,
+      "lzma6_delta": 1525532,
+      "both_gain": true,
+      "both_lose": false,
+      "n_blocks": 798906,
+      "side_est": 20971
+    },
+    {
+      "label": "category_tokens_global_sort",
+      "raw_orig": 474370,
+      "raw_lex": 474370,
+      "zlib9_orig": 138825,
+      "zlib9_lex": 78542,
+      "zlib9_delta": 60283,
+      "lzma6_orig": 99940,
+      "lzma6_lex": 65248,
+      "lzma6_delta": 34692,
+      "both_gain": true,
+      "both_lose": false,
+      "n_blocks": 25120,
+      "side_est": 0
+    }
+  ],
+  "notes": {
+    "enwik9_articles_cmix_lex": 243425,
+    "enwik9_tail_bytes": 45332670,
+    "enwik9_r1_start": 13599801,
+    "enwik9_r2_start": 30372888
+  }
+}

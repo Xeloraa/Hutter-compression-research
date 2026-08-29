@@ -71,7 +71,7 @@ S1: tree weights vs softmax `vocab × hidden` — similar or smaller. Not the 1.
 | Tree head quality-neutral, CPU saved | 0 archive; maybe 1–3 h toward another model | 0.4 | **B** unless freed hours buy a new megabyte expert |
 | Tree head worse as a byte mixer | archive **grows** (100 KB–1 MB possible) | 0.3 | kill |
 | Tree head better because softmax overfits 200c/1L | 50–300 KB, not 1.1 MB | 0.2 | A-adjacent, not sufficient alone |
-| Keep softmax; spend effort on **another PHDA9/payload transform** | **0.3–2 MB** if a second structured region exists | 0.25 | **A** (cmix-lex already took regime 1) |
+| Keep softmax; spend effort on **another PHDA9/payload transform** | **≤150 KB** on every analog visible in raw enwik8; r1 already taken | 0.10 | **killed as A** at cheap filter (`A2.md`); leftover hole = Linux post-WRT tail autopsy |
 
 fx2 decompress is **65 h vs 68 h cap** (T=1026). Almost no free CPU. cmix-lex reports **43.6 h CPU vs 58 h cap** (T=1200) and **already includes fxcm_v26**.
 

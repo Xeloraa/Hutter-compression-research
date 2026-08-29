@@ -2,11 +2,11 @@
 
 **Do not run compressors from this note. Do not repeat E25–E29 width/block/init sweeps.**
 
-In-flight (do not start a second 3MB job until this lands): **E30d forgetBias=1 vs E30e forgetBias=0**, 92c/3L/b=4/initMul=0.5, MinGW, DIC→fxcm, baseline 521,198 / incumbent 517,996.
+E30d/e **DONE — STOP**. MinGW E30e **517905 EXACT** (−190 B vs E30d 518095). Not the Linux lock. Do not start E32/E35/E41 or another 3 MB `cmp`.
 
 ---
 
-**Strategic reset:** do **not** start E41, E35, or E32 on 3 MB. E41 is Class C (zlib/lzma lose on the pointer stream). Next work is A-path: `INTEGRATION.md` (tree head **with** SetInput inside fx2/cmix-lex) and a second PHDA9/payload-lex region. E30e: record only.
+**Strategic reset:** do **not** start E41, E35, or E32 on 3 MB. E41 is Class C. Forget-bias series **stopped** at E30e. **A2** cheap-filtered on enwik8: **killed as megabyte** (`A2.md`). Next A is a Linux post-WRT tail autopsy, then `INTEGRATION.md` tree head **with** SetInput inside cmix-lex.
 
 ---
 

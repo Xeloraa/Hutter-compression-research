@@ -1,0 +1,150 @@
+{
+  "elapsed_s": 38.31,
+  "link_list_pages": 12245,
+  "link_list_raw": 12845474,
+  "zlib9_orig": 5132662,
+  "zlib9_lex": 5078294,
+  "zlib9_delta": 54368,
+  "lzma6_orig": 3453136,
+  "lzma6_lex": 3450976,
+  "lzma6_delta": 2160,
+  "long_line_extra_total": 1212438,
+  "long_line_extra_by_band": {
+    "24-39": 545713,
+    "40-79": 407124,
+    "80-159": 154113,
+    "160+": 105488
+  },
+  "long_line_n_by_band": {
+    "24-39": 137886,
+    "40-79": 138134,
+    "80-159": 89042,
+    "160+": 146365
+  },
+  "dup_line_extra_templateish": 372197,
+  "dup_line_extra_category": 162941,
+  "dup_line_extra_other": 677300,
+  "xmlish_skipped": 0,
+  "top20_dup_lines": [
+    {
+      "extra": 11368,
+      "count": 204,
+      "len": 56,
+      "preview": "&lt;TD&gt;&lt;FONT SIZE=&quot;1&quot;&gt;(NA)&lt;/TD&gt;"
+    },
+    {
+      "extra": 8370,
+      "count": 280,
+      "len": 30,
+      "preview": "{| class=&quot;wikitable&quot;"
+    },
+    {
+      "extra": 8235,
+      "count": 306,
+      "len": 27,
+      "preview": "|- align=&quot;center&quot;"
+    },
+    {
+      "extra": 7260,
+      "count": 133,
+      "len": 55,
+      "preview": "| &lt;center&gt;{{unicode|&amp;#x2713;}}&lt;/center&gt;"
+    },
+    {
+      "extra": 7140,
+      "count": 36,
+      "len": 204,
+      "preview": "Please consult the ''Page history'' link for the actual old content - to prevent this obsolete page from showing up in '"
+    },
+    {
+      "extra": 5848,
+      "count": 173,
+      "len": 34,
+      "preview": "&lt;TR ALIGN=&quot;right&quot;&gt;"
+    },
+    {
+      "extra": 5016,
+      "count": 20,
+      "len": 264,
+      "preview": ") from appearing on the shortest-articles page: otherwise these pages would obscure the pages there that probably can be"
+    },
+    {
+      "extra": 4760,
+      "count": 36,
+      "len": 136,
+      "preview": "This (now-obsolete) page contains (in its history) important documentation of the early stages of Wikipedia. Please '''d"
+    },
+    {
+      "extra": 4700,
+      "count": 95,
+      "len": 50,
+      "preview": "|align=&quot;center&quot; valign=&quot;top&quot;|-"
+    },
+    {
+      "extra": 4450,
+      "count": 179,
+      "len": 25,
+      "preview": "|- valign=&quot;top&quot;"
+    },
+    {
+      "extra": 3864,
+      "count": 25,
+      "len": 161,
+      "preview": "&lt;!-- Do not add yourself, or anyone else who does not already have a Wikipedia article, to this list. Duplicate insta"
+    },
+    {
+      "extra": 3772,
+      "count": 83,
+      "len": 46,
+      "preview": "|- style=&quot;background-color:#eeeeee;&quot;"
+    },
+    {
+      "extra": 3724,
+      "count": 77,
+      "len": 49,
+      "preview": "&lt;!-- The below are interlanguage links. --&gt;"
+    },
+    {
+      "extra": 3706,
+      "count": 35,
+      "len": 109,
+      "preview": "[[Wikipedia:Complete list of encyclopedia topics (obsolete)|Make findable from page via ''What links here'']]"
+    },
+    {
+      "extra": 3406,
+      "count": 132,
+      "len": 26,
+      "preview": "|-align=&quot;center&quot;"
+    },
+    {
+      "extra": 3247,
+      "count": 18,
+      "len": 191,
+      "preview": "{| border=1 align=right cellpadding=4 cellspacing=0 width=300 style=&quot;margin: 0 0 1em 1em; background: #f9f9f9; bord"
+    },
+    {
+      "extra": 3164,
+      "count": 114,
+      "len": 28,
+      "preview": "==Holidays and observances=="
+    },
+    {
+      "extra": 3125,
+      "count": 126,
+      "len": 25,
+      "preview": "|- valign=&quot;TOP&quot;"
+    },
+    {
+      "extra": 2904,
+      "count": 89,
+      "len": 33,
+      "preview": "{| style=&quot;float:right;&quot;"
+    },
+    {
+      "extra": 2875,
+      "count": 116,
+      "len": 25,
+      "preview": "{{ActingFilmography-movie"
+    }
+  ]
+}
