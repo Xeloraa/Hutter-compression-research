@@ -23,6 +23,16 @@
 
 ## Work now
 
-**A2 cheap filter + PHDA9-lite scale (E43/E44) are done.** Second-lex analogs die; lang/r2 lzma is **sublinear** 30→100 MB; a 20–30 MB cmix A/B is underpowered for A2. Leftover A2 hole is a Linux **post-WRT tail autopsy only**. The 10–30 MB full-stack A/B is **A1** (tree head + `SetInput` in cmix-lex). See `A2.md` and `INTEGRATION.md`.
+**A2 is dead.** Cheap filter + PHDA9-lite (E43/E44) killed second-lex / regime-2 as megabyte mechanisms (`A2.md`). Lang/r2 lzma is sublinear 30→100 MB; leftover tail autopsy is diagnostic only, not a prize path.
 
-Do not start E32, E35, E36, width sweeps, or E41 3 MB fxcm.
+**Next Linux job: A1** — tree head replacing 256-softmax **only**, keeping `SetInput`, PPMD glue, `lstmex`, article order, and `fxcm_v26` inside cmix-lex. Frozen 200c/1L/h=128. Operator doc: `A1_PATCH.md`. Kill gate: 30 MB full-stack A/B vs stock cmix-lex; need **≥50 KB** ΔS win, else kill (regression **≥50 KB** also kill).
+
+Do not start E32, E35, E36, width sweeps, E41 3 MB fxcm, or paste `work/src/btl-bd.cpp` aux=0 into the prize stack.
+
+---
+
+## A3 — LSTM input symbol from fxcm lastCW on codewords (new)
+
+**Hypothesis.** E19 died putting lastCW buckets into **mixer slots** (+0.024%) because fxcm already exposes word types there. The cmix LSTM still sees only the DIC byte one-hot (`Perceive(c0&255)`) and never the codeword identity `lastCW ∈ [0,44515)`. On bytes with `c≥0x80`, set `input_symbol = 128 + (lastCW % 128)`; literals keep `c0`. That injects word identity at the recurrent input without touching PHDA9, `payload_lex`, or mixer topology — a different channel than A2's tail reorder.
+
+**Kill test (Linux, after A1 frozen or in parallel on stock softmax baseline).** Patch `LstmLayer::ForwardPass` / `BackwardPass` input_symbol only; keep A1 tree head + `SetInput` unchanged. Run 30 MB cmix-lex full preprocess. Kill if ΔS ≤ +30 KB vs the A1-frozen (or stock-softmax) baseline, or if a **shuffled-lastCW** control (permute codeword IDs, same cardinality) matches live within 10 KB — which would prove extra capacity, not information.
