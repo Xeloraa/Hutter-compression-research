@@ -1,0 +1,25 @@
+{
+  "tables_parsed": 1496,
+  "table_fair": {
+    "label": "table_cells_row_vs_col",
+    "raw": 2401792,
+    "same_bytes": false,
+    "zlib9_delta": 7609,
+    "lzma6_delta": 10040,
+    "zlib9_orig": 641274,
+    "lzma6_orig": 494012
+  },
+  "ibox_fair": {
+    "label": "ibox_values_dump_vs_bykey",
+    "raw": 302100,
+    "same_bytes": true,
+    "zlib9_delta": 6355,
+    "lzma6_delta": 3536,
+    "zlib9_orig": 119258,
+    "lzma6_orig": 98048
+  },
+  "table_raw_row": 2401792,
+  "table_raw_col": 2406801,
+  "ibox_raw": 302100,
+  "ibox_col_raw": 302100
+}

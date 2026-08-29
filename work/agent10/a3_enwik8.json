@@ -1,0 +1,248 @@
+{
+  "md5": "a1fa5ffddb56f4953e226637dabbb36a",
+  "file_bytes": 100000000,
+  "pages_with_text": 12344,
+  "text_bytes": 95344978,
+  "dic_words": 44515,
+  "dic_longest": 58,
+  "elapsed_s": 506.64,
+  "aliases": {
+    "selfpipe_n": 620,
+    "selfpipe_save_bytes": 8201,
+    "br_n": 0,
+    "nbsp_entity_n": 0,
+    "nbsp_save_if_utf8": 0,
+    "amp_numeric_n": 0,
+    "amp_numeric_save_bound": 0,
+    "alias_raw_save": 8201,
+    "comment_n": 0,
+    "comment_bytes": 0,
+    "comment_inner": 0,
+    "comment_extra": 0
+  },
+  "wrt_residual": {
+    "letter_bytes": 71505836,
+    "covered": 68161489,
+    "cover_frac": 0.953229733584263,
+    "hits": 14024426,
+    "leftover_bytes": 3344347,
+    "leftover_tokens": 3344347,
+    "leftover_types": 24,
+    "leftover_extra": 3344323,
+    "leftover_top": [
+      [
+        "t",
+        422168
+      ],
+      [
+        "o",
+        318618
+      ],
+      [
+        "u",
+        310285
+      ],
+      [
+        "e",
+        260865
+      ],
+      [
+        "q",
+        202024
+      ],
+      [
+        "g",
+        201569
+      ],
+      [
+        "i",
+        193285
+      ],
+      [
+        "r",
+        165842
+      ],
+      [
+        "l",
+        144390
+      ],
+      [
+        "c",
+        136883
+      ],
+      [
+        "d",
+        121995
+      ],
+      [
+        "m",
+        118340
+      ],
+      [
+        "n",
+        108394
+      ],
+      [
+        "p",
+        96499
+      ],
+      [
+        "k",
+        86830
+      ],
+      [
+        "h",
+        77341
+      ],
+      [
+        "b",
+        74821
+      ],
+      [
+        "f",
+        65742
+      ],
+      [
+        "y",
+        55118
+      ],
+      [
+        "v",
+        51152
+      ]
+    ]
+  },
+  "cross_article": {
+    "redirects": {
+      "n": 3666,
+      "text_bytes": 186927
+    },
+    "file_titles": {
+      "n": 13263,
+      "unique": 12427,
+      "extra": 17029
+    },
+    "nav_templates": {
+      "n": 595,
+      "unique": 595,
+      "extra": 0
+    },
+    "stubs": {
+      "n": 804,
+      "unique": 351,
+      "extra": 5108
+    },
+    "defaultsort": {
+      "n": 0,
+      "unique": 0,
+      "extra": 0
+    },
+    "coord": {
+      "n": 0,
+      "unique": 0,
+      "extra": 0
+    },
+    "isbn": {
+      "n": 4852,
+      "unique": 4508,
+      "extra": 3441
+    },
+    "pmid": {
+      "n": 130,
+      "unique": 130,
+      "extra": 0
+    },
+    "wikitables": {
+      "n": 2053,
+      "unique": 2041,
+      "extra": 1210,
+      "bytes": 3067936,
+      "col_fail": 557
+    },
+    "infobox": {
+      "n": 878,
+      "bytes": 617505,
+      "field_keys": 1145,
+      "field_pairs": 12776
+    }
+  },
+  "rankings": {
+    "alias": {
+      "label": "whole_dump_alias",
+      "raw_orig": 100000000,
+      "raw_alt": 99991799,
+      "zlib9_orig": 36475792,
+      "zlib9_alt": 36474054,
+      "zlib9_delta": 1738,
+      "lzma6_orig": 26375764,
+      "lzma6_alt": 26373844,
+      "lzma6_delta": 1920
+    },
+    "comments": {
+      "label": "strip_comments_irreversible",
+      "raw_orig": 100000000,
+      "raw_alt": 100000000,
+      "zlib9_orig": 36475792,
+      "zlib9_alt": 36475792,
+      "zlib9_delta": 0,
+      "lzma6_orig": 26375764,
+      "lzma6_alt": 26375764,
+      "lzma6_delta": 0
+    },
+    "infobox_by_key": {
+      "label": "infobox_values_by_key",
+      "raw_orig": 434189,
+      "raw_alt": 315996,
+      "zlib9_orig": 147248,
+      "zlib9_alt": 117217,
+      "zlib9_delta": 30031,
+      "lzma6_orig": 113768,
+      "lzma6_alt": 99908,
+      "lzma6_delta": 13860
+    },
+    "wikitable_columns": {
+      "label": "wikitable_columns",
+      "raw_orig": 3069989,
+      "raw_alt": 2761097,
+      "zlib9_orig": 795985,
+      "zlib9_alt": 743760,
+      "zlib9_delta": 52225,
+      "lzma6_orig": 613044,
+      "lzma6_alt": 569188,
+      "lzma6_delta": 43856
+    },
+    "file_titles": {
+      "label": "file_titles_sort",
+      "raw_orig": 302973,
+      "raw_alt": 302973,
+      "zlib9_orig": 124708,
+      "zlib9_alt": 115847,
+      "zlib9_delta": 8861,
+      "lzma6_orig": 109576,
+      "lzma6_alt": 101928,
+      "lzma6_delta": 7648
+    },
+    "coord": {
+      "label": "coord_sort",
+      "raw_orig": 0,
+      "raw_alt": 0,
+      "zlib9_orig": 0,
+      "zlib9_alt": 0,
+      "zlib9_delta": 0,
+      "lzma6_orig": 0,
+      "lzma6_alt": 0,
+      "lzma6_delta": 0
+    },
+    "navbox": {
+      "label": "navbox_sort",
+      "raw_orig": 118456,
+      "raw_alt": 118456,
+      "zlib9_orig": 28601,
+      "zlib9_alt": 27569,
+      "zlib9_delta": 1032,
+      "lzma6_orig": 24328,
+      "lzma6_alt": 23936,
+      "lzma6_delta": 392
+    }
+  }
+}

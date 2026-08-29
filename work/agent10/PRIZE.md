@@ -32,10 +32,10 @@ Exploit on 92c/forget/mixer slots can move hundreds of bytes on 3 MB. The prize-
 
 ### Explore track that could actually compete
 
-1. **Put our tree-head BD-LSTM into the fx2-cmix/cmix-lex stack** (replace their 256-softmax LSTM), keep PPMD/PAQ/order. Measure S, not 3 MB fxcm-only.
+1. **A1:** replace only the 256-softmax LSTM **head** inside cmix-lex, keep `SetInput` / PPMD / fxcm_v26 / article order. Freeze **170c/1L/h=128**. Spec: `A1_PATCH.md`. Do not drop in our aux=0 92c/3L net.
 2. **Paid semantic order** only if compressed permutation + archive gain beats 215 KB (STARLIT tax). Free title order is dead in DIC+fxcm (E10).
 3. **Identity/OOV copy** only if an oracle beats fxcm’s match+word models on *rare* tokens (γ-gap vs unigram already died; see `work/agent7/IDENTITY.md`).
 
 ### Exploit track (3 MB)
 
-E30d recorded (MinGW 518095 EXACT). E30e **517905 EXACT** (886 s / 817 s, −190 B vs E30d MinGW). Forget-bias series **STOPPED**. Class C. A2 cheap filter killed as megabyte (`A2.md`). Do not start E35/E32/E41. Do not replace `locked/`.
+E30d recorded (MinGW 518095 EXACT). E30e **517905 EXACT** (886 s / 817 s, −190 B vs E30d MinGW). Forget-bias series **STOPPED**. Class C. A2 and A3 cheap filters killed as megabyte (`A2.md`, `A3.md`). A1 spec is `A1_PATCH.md`. Do not start E35/E32/E41. Do not replace `locked/`.

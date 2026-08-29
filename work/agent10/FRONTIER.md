@@ -6,7 +6,7 @@ E30d/e **DONE — STOP**. MinGW E30e **517905 EXACT** (−190 B vs E30d 518095).
 
 ---
 
-**Strategic reset:** do **not** start E41, E35, or E32 on 3 MB. E41 is Class C. Forget-bias series **stopped** at E30e. **A2** cheap-filtered on enwik8: **killed as megabyte** (`A2.md`). Next A is a Linux post-WRT tail autopsy, then `INTEGRATION.md` tree head **with** SetInput inside cmix-lex.
+**Strategic reset:** do **not** start E41, E35, or E32 on 3 MB. E41 is Class C. Forget-bias series **stopped** at E30e. **A2** and **A3** cheap-filtered on enwik8: **killed as megabyte** (`A2.md`, `A3.md`). Only live A is **A1** tree head **with** SetInput inside cmix-lex (`A1_PATCH.md`). Linux job. Do not drop in `BtLstm` aux=0.
 
 ---
 
