@@ -23,8 +23,6 @@
 
 ## Work now
 
-**A2 cheap filter is done** (`A2.md`, enwik8 100 MB). Every reversible analog of a *second* payload_lex region dies at the lzma ranking except the D99/D86a header stream **cmix-lex already took**. Regime 2 / interwiki is 99.8% unique titles. Next A2 hole is a **post-WRT tail autopsy on Linux** (10–30 MB full-stack protocol in `A2.md`), not another 3 MB fxcm run.
-
-Prefer **A1** after that autopsy (tree head **with** `SetInput` inside cmix-lex). See `INTEGRATION.md`.
+**A2 cheap filter + PHDA9-lite scale (E43/E44) are done.** Second-lex analogs die; lang/r2 lzma is **sublinear** 30→100 MB; a 20–30 MB cmix A/B is underpowered for A2. Leftover A2 hole is a Linux **post-WRT tail autopsy only**. The 10–30 MB full-stack A/B is **A1** (tree head + `SetInput` in cmix-lex). See `A2.md` and `INTEGRATION.md`.
 
 Do not start E32, E35, E36, width sweeps, or E41 3 MB fxcm.

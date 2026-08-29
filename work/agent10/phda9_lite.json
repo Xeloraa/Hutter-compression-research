@@ -1,0 +1,183 @@
+{
+  "rows": [
+    {
+      "prefix_bytes": 20000000,
+      "complete_pages": 2799,
+      "numeric_raw": 67509,
+      "contrib_raw": 52716,
+      "header_raw": 120225,
+      "lang_raw": 537951,
+      "pages_with_lang": 1547,
+      "side_est": 4006,
+      "numeric_lex": {
+        "raw": 67509,
+        "zlib9_orig": 13307,
+        "zlib9_lex": 11332,
+        "zlib9_delta": 1975,
+        "lzma6_orig": 11616,
+        "lzma6_lex": 7100,
+        "lzma6_delta": 4516
+      },
+      "contrib_lex": {
+        "raw": 52716,
+        "zlib9_orig": 14200,
+        "zlib9_lex": 10620,
+        "zlib9_delta": 3580,
+        "lzma6_orig": 12672,
+        "lzma6_lex": 8860,
+        "lzma6_delta": 3812
+      },
+      "header_lex_by_contrib": {
+        "raw": 120225,
+        "zlib9_orig": 30363,
+        "zlib9_lex": 26657,
+        "zlib9_delta": 3706,
+        "lzma6_orig": 24668,
+        "lzma6_lex": 21212,
+        "lzma6_delta": 3456
+      },
+      "lang_lex": {
+        "raw": 539498,
+        "zlib9_orig": 179802,
+        "zlib9_lex": 176531,
+        "zlib9_delta": 3271,
+        "lzma6_orig": 134660,
+        "lzma6_lex": 131604,
+        "lzma6_delta": 3056
+      },
+      "lang_blocks": 1547,
+      "lang_side_est": 2048
+    },
+    {
+      "prefix_bytes": 30000000,
+      "complete_pages": 3937,
+      "numeric_raw": 94898,
+      "contrib_raw": 73957,
+      "header_raw": 168855,
+      "lang_raw": 717379,
+      "pages_with_lang": 2273,
+      "side_est": 5877,
+      "numeric_lex": {
+        "raw": 94898,
+        "zlib9_orig": 18616,
+        "zlib9_lex": 15611,
+        "zlib9_delta": 3005,
+        "lzma6_orig": 16156,
+        "lzma6_lex": 9496,
+        "lzma6_delta": 6660
+      },
+      "contrib_lex": {
+        "raw": 73957,
+        "zlib9_orig": 20254,
+        "zlib9_lex": 14711,
+        "zlib9_delta": 5543,
+        "lzma6_orig": 17784,
+        "lzma6_lex": 12072,
+        "lzma6_delta": 5712
+      },
+      "header_lex_by_contrib": {
+        "raw": 168855,
+        "zlib9_orig": 43276,
+        "zlib9_lex": 37241,
+        "zlib9_delta": 6035,
+        "lzma6_orig": 34640,
+        "lzma6_lex": 29560,
+        "lzma6_delta": 5080
+      },
+      "lang_lex": {
+        "raw": 719652,
+        "zlib9_orig": 245309,
+        "zlib9_lex": 242323,
+        "zlib9_delta": 2986,
+        "lzma6_orig": 184472,
+        "lzma6_lex": 180860,
+        "lzma6_delta": 3612
+      },
+      "lang_blocks": 2273,
+      "lang_side_est": 3168
+    },
+    {
+      "prefix_bytes": 100000000,
+      "complete_pages": 12346,
+      "numeric_raw": 297338,
+      "contrib_raw": 231322,
+      "header_raw": 528660,
+      "lang_raw": 2182120,
+      "pages_with_lang": 7133,
+      "side_est": 20975,
+      "numeric_lex": {
+        "raw": 297338,
+        "zlib9_orig": 57741,
+        "zlib9_lex": 45174,
+        "zlib9_delta": 12567,
+        "lzma6_orig": 49180,
+        "lzma6_lex": 25696,
+        "lzma6_delta": 23484
+      },
+      "contrib_lex": {
+        "raw": 231322,
+        "zlib9_orig": 62747,
+        "zlib9_lex": 36291,
+        "zlib9_delta": 26456,
+        "lzma6_orig": 50452,
+        "lzma6_lex": 29036,
+        "lzma6_delta": 21416
+      },
+      "header_lex_by_contrib": {
+        "raw": 528660,
+        "zlib9_orig": 135967,
+        "zlib9_lex": 105639,
+        "zlib9_delta": 30328,
+        "lzma6_orig": 102132,
+        "lzma6_lex": 82860,
+        "lzma6_delta": 19272
+      },
+      "lang_lex": {
+        "raw": 2189253,
+        "zlib9_orig": 768936,
+        "zlib9_lex": 760292,
+        "zlib9_delta": 8644,
+        "lzma6_orig": 560348,
+        "lzma6_lex": 551792,
+        "lzma6_delta": 8556
+      },
+      "lang_blocks": 7133,
+      "lang_side_est": 11413
+    }
+  ],
+  "scale": {
+    "pages_20_to_30": 1.407,
+    "pages_30_to_100": 3.136,
+    "contrib_lzma_20_to_30": 1.498,
+    "contrib_lzma_30_to_100": 3.749,
+    "lang_lzma_20_to_30": 1.182,
+    "lang_lzma_30_to_100": 2.369,
+    "numeric_lzma_30_to_100": 3.526
+  },
+  "enwik9_proj": {
+    "numeric_lex": {
+      "lzma_x10": 234840,
+      "zlib_x10": 125670,
+      "side_x20_articles": 419500,
+      "net_lzma_x10_minus_half_side20": 25090
+    },
+    "contrib_lex": {
+      "lzma_x10": 214160,
+      "zlib_x10": 264560,
+      "side_x20_articles": 419500,
+      "net_lzma_x10_minus_half_side20": 4410
+    },
+    "header_lex_by_contrib": {
+      "lzma_x10": 192720,
+      "zlib_x10": 303280,
+      "side_x20_articles": 419500,
+      "net_lzma_x10_minus_half_side20": -17030
+    },
+    "lang_lex": {
+      "lzma_x10": 85560,
+      "zlib_x10": 86440,
+      "side_x20_articles": 228260,
+      "net_lzma_x10_minus_half_side20": -28570
+    }
+  }
+}

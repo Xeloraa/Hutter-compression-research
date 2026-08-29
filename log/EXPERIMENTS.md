@@ -21,4 +21,5 @@ Incumbent: 517,996 bytes (92c/3L/b=4/initMul=0.5) LOCKED
 | E40 | O2 first-template byte mass | enwik8.3m pages | no fxcm | n/a | n/a | n/a | unmodified O2 KILLED (hatnotes 30.5%); schema-only leftover |
 | E41 | reversible OOV pointer min_len=6 | enwik8.3m.dic | MARK+uleb rank | n/a (DIC -14407) | n/a | n/a | **KILLED Class C**: zlib9 −1702, lzma6 −1092 vs vanilla; no 3MB fxcm |
 | E42 | exact page/line dups | enwik8.3m pages | no codec | n/a | n/a | n/a | Class B: extra bodies 0.037%, long lines 0.643%; wrong scale |
-| E43 | A2 second payload_lex region | enwik8 100 MB | no codec; zlib9/lzma6 ranking | n/a | n/a | 38 s | **KILLED as A**: r1 analog already taken; r2/cat/ibox/link-list lzma Δ tens of KB or net-neg after side; page dups 0.037% at 100 MB. Next: Linux post-WRT autopsy (`A2.md`) |
+| E43 | A2 second payload_lex region | enwik8 100 MB | no codec; zlib9/lzma6 ranking | n/a | n/a | 38 s | **KILLED as A**: r1 analog already taken; r2/cat/ibox/link-list lzma Δ tens of KB or net-neg after side; page dups 0.037% at 100 MB |
+| E44 | PHDA9-lite 20/30/100 MB scale | enwik8 prefixes | packed id/ts/contrib + lang lex | n/a | n/a | 17 s | lang lzma **sublinear**; 30 MB contrib +5.7 KB / lang +3.6 KB — 20–30 MB cmix A/B is underpowered for A2. See `A2.md` |
