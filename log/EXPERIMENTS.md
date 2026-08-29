@@ -16,3 +16,4 @@ Incumbent: 517,996 bytes (92c/3L/b=4/initMul=0.5) LOCKED
 | E36a | mxA1[1] cxt = ExpectedByte | 3MB pipeline | M=256 | | | | coded `-DLSTM_MEX_CXT=1` |
 | E36b | bpos+fails+lstmex cxt | 3MB pipeline | M=8192 | | | | coded `-DLSTM_MEX_CXT=2` |
 | E37 | lastCW γ-gap identity cache | 3MB DIC lastCW stream | mixed vs unigram | n/a | n/a | n/a | KILLED (frequent-word overlap; rare+far γ never wins) |
+| E38 | causal OOV copy vs spelling | enwik8.3m raw | gamma gap | n/a | n/a | n/a | PROMISING ceiling; 31.6% prefix-overlap with match |
