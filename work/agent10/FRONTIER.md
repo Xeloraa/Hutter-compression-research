@@ -6,9 +6,7 @@ In-flight (do not start a second 3MB job until this lands): **E30d forgetBias=1 
 
 ---
 
-**Single next 3MB job after E30d/e:** **E41 OOV pointer** (DIC stream, len>=6, exact −14,407 B input, C++ roundtrip EXACT), not E35. E35 is still the first *mixer* exploit if E41 loses or is a wash.
-
-E41 protocol: same-compiler `cmp` (winning forgetBias) on `enwik8.3m.dic.oovptr` vs the E30 vanilla archive. Kill if archive delta <100 B. oovptr.cpp ships in the compressor for a real S; lab ranking is archive bytes only.
+**Strategic reset:** do **not** start E41, E35, or E32 on 3 MB. E41 is Class C (zlib/lzma lose on the pointer stream). Next work is A-path: `INTEGRATION.md` (tree head **with** SetInput inside fx2/cmix-lex) and a second PHDA9/payload-lex region. E30e: record only.
 
 ---
 

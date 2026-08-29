@@ -10,14 +10,7 @@ Gate in flight: E30d (fb=1 control) vs E30e (fb=0). Zero CPU. A “win” is E30
 
 ## Verdict (read this first)
 
-**After E30:** next 3 MB job is **E41 OOV pointer** (new reversible stage, −14,407 B DIC input, exact), not mixer-slot fill and not E35. E35 remains the first mixer-path exploit if E41 <100 B.
-
-| If E30e (forgetBias=0) … | First 3 MB after the pair | Config |
-|---|---|---|
-| **WINS 3 MB** | **fb=0 + E41 oovptr** | winning fb on pointer stream vs vanilla |
-| **LOSES 3 MB** | **fb=1 + E41 oovptr** | same |
-
-Either way: **one new axis**. Do not fold in tree-head Adam or E32 on the same run.
+**Reset:** after E30e reports, **stop composing 3 MB LSTM/mixer/OOV experiments**. E41 is killed (zlib/lzma lose). Next work is prize-stack integration (`work/agent10/INTEGRATION.md`), not COMPOSE-1 on this tree.
 
 ---
 

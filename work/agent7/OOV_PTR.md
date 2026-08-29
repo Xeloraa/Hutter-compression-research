@@ -10,5 +10,5 @@ Best exact transform: unbounded saves 14407 bytes of DIC input (0.794%).
 
 C++ `work/agent7/oovptr.cpp` matches: 1814514 -> 1800107, decode EXACT.
 
-This is not an fxcm archive. After E30d/e, run same-compiler `cmp` on the pointer stream vs vanilla DIC. Kill if archive gain <100 B. Do not overwrite `locked/`.
+**KILLED as a pipeline (Class C).** zlib9 911223→912925 (−1702 vs vanilla). lzma6 752544→753636 (−1092). Generic compressors lose; do not run 3 MB fxcm. `tools/run_e41_oovptr.ps1` stays unused.
 

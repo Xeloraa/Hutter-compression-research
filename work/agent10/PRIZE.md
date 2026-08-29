@@ -36,6 +36,6 @@ Exploit on 92c/forget/mixer slots can move hundreds of bytes on 3 MB. The prize-
 2. **Paid semantic order** only if compressed permutation + archive gain beats 215 KB (STARLIT tax). Free title order is dead in DIC+fxcm (E10).
 3. **Identity/OOV copy** only if an oracle beats fxcm’s match+word models on *rare* tokens (γ-gap vs unigram already died; see `work/agent7/IDENTITY.md`).
 
-### Exploit track (3 MB, still required)
+### Exploit track (3 MB)
 
-ForgetBias=0 paired pipeline (in flight). Then one-axis E35 L2 LSTM skip. Do not spend the 3.9 h margin on 92c→100c (54 B).
+E30d recorded (MinGW 518095 EXACT). E30e in flight — **record then stop**. Do not start E35/E32/E41. See `STRATEGY.md` and `INTEGRATION.md`.
