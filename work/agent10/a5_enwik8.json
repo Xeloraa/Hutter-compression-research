@@ -1,0 +1,665 @@
+{
+  "dic_words": 44515,
+  "dic_longest": 58,
+  "slices": [
+    {
+      "path": "C:\\Users\\vivi\\hutter\\data\\enwik8",
+      "md5": "a1fa5ffddb56f4953e226637dabbb36a",
+      "file_bytes": 100000000,
+      "elapsed_s": 549.16,
+      "census": {
+        "pages": 12344,
+        "body_bytes": 95357321,
+        "xml_shell_est": 4655022,
+        "n_type_runs": 1704754,
+        "n_url_runs": 50770,
+        "n_markup_runs": 809619,
+        "n_prose_runs": 844365,
+        "mass": {
+          "url": 2433736,
+          "markup": 31994725,
+          "prose": 60928860,
+          "punct_byteclass": 0,
+          "url_frac": 0.02552227741381283,
+          "markup_frac": 0.335524579177303,
+          "prose_frac": 0.6389531434088841
+        },
+        "spans": {
+          "url": {
+            "n": 50770,
+            "unique": 47689,
+            "extra_copy_bytes": 140236,
+            "uniq_frac": 0.9393145558400631
+          },
+          "wikilink": {
+            "n": 937642,
+            "unique": 456135,
+            "extra_copy_bytes": 7836561,
+            "uniq_frac": 0.4864703159628088
+          },
+          "template": {
+            "n": 34820,
+            "unique": 23292,
+            "extra_copy_bytes": 194972,
+            "uniq_frac": 0.6689259046524986
+          },
+          "table": {
+            "n": 1964,
+            "unique": 1953,
+            "extra_copy_bytes": 1090,
+            "uniq_frac": 0.9943991853360489
+          },
+          "html_tags": {
+            "n": 0,
+            "bytes": 0
+          },
+          "www_no_scheme": {
+            "n": 38754,
+            "bytes": 1513775
+          }
+        },
+        "url_prefix": {
+          "p16": {
+            "n_long_enough": 50735,
+            "unique_prefixes": 19681,
+            "extra_copy_bytes": 496864
+          },
+          "p24": {
+            "n_long_enough": 46439,
+            "unique_prefixes": 25624,
+            "extra_copy_bytes": 499560
+          },
+          "p32": {
+            "n_long_enough": 37940,
+            "unique_prefixes": 24492,
+            "extra_copy_bytes": 430336
+          },
+          "host": {
+            "unique_hosts": 26521,
+            "host_extra_bytes": 404943,
+            "scheme_host_slash_extra": 598773,
+            "top_hosts": [
+              {
+                "host": "news.bbc.co.uk",
+                "n": 610
+              },
+              {
+                "host": "www.geocities.com",
+                "n": 291
+              },
+              {
+                "host": "www.biblegateway.com",
+                "n": 267
+              },
+              {
+                "host": "www.ncbi.nlm.nih.gov",
+                "n": 253
+              },
+              {
+                "host": "www.bbc.co.uk",
+                "n": 190
+              },
+              {
+                "host": "www.newadvent.org",
+                "n": 186
+              },
+              {
+                "host": "www.imdb.com",
+                "n": 182
+              },
+              {
+                "host": "www.cia.gov",
+                "n": 171
+              }
+            ]
+          }
+        },
+        "url_gaps": {
+          "n": {
+            "first": 1,
+            "gap_le_32k": 50499,
+            "gap_32k_8m": 270,
+            "gap_gt_8m": 0
+          },
+          "bytes": {
+            "first": 63,
+            "gap_le_32k": 2420090,
+            "gap_32k_8m": 13583,
+            "gap_gt_8m": 0
+          }
+        },
+        "markup_span_counts": {
+          "tables": 1964,
+          "templates": 34820,
+          "wikilinks": 937642,
+          "html_tags": 0
+        },
+        "letter": {
+          "url": {
+            "raw": 2433736,
+            "letters": 1834422,
+            "other": 599314,
+            "dic_covered": 1642334,
+            "leftover_letters": 192088,
+            "dic_words": 388144,
+            "letter_frac": 0.7537473251001752,
+            "cover_frac_of_letters": 0.8952869078107436
+          },
+          "markup": {
+            "raw": 31994725,
+            "letters": 21726210,
+            "other": 10268515,
+            "dic_covered": 20158221,
+            "leftover_letters": 1567989,
+            "dic_words": 3932725,
+            "letter_frac": 0.6790560006376051,
+            "cover_frac_of_letters": 0.9278296122517457
+          },
+          "prose": {
+            "raw": 60928860,
+            "letters": 45670121,
+            "other": 15258739,
+            "dic_covered": 44158994,
+            "leftover_letters": 1511127,
+            "dic_words": 9309655,
+            "letter_frac": 0.7495646726362515,
+            "cover_frac_of_letters": 0.9669121305809547
+          },
+          "bodies": {
+            "raw": 95357321,
+            "letters": 69230753,
+            "other": 26126568,
+            "dic_covered": 65960120,
+            "leftover_letters": 3270633,
+            "dic_words": 13630555,
+            "letter_frac": 0.7260140309520651,
+            "cover_frac_of_letters": 0.9527575122575945
+          }
+        }
+      },
+      "independent": {
+        "zlib9_mixed": 35433702,
+        "zlib9_url": 829240,
+        "zlib9_markup": 11472526,
+        "zlib9_prose": 22261875,
+        "zlib9_rle": 1780638,
+        "zlib9_sum_typed_plus_rle": 36344279,
+        "zlib9_delta_indep": -910577
+      },
+      "streams": {
+        "url": {
+          "label": "url_concat",
+          "raw": 2433736,
+          "zlib9": 829240
+        },
+        "markup": {
+          "label": "markup_concat",
+          "raw": 31994725,
+          "zlib9": 11472526
+        },
+        "prose": {
+          "label": "prose_concat",
+          "raw": 60928860,
+          "zlib9": 22261875
+        },
+        "type_rle": {
+          "label": "type_rle",
+          "raw": 3538780,
+          "zlib9": 1780638
+        },
+        "punct": {
+          "label": "punct_[]{}|=",
+          "raw": 0,
+          "zlib9": 0
+        },
+        "punct_rle": {
+          "label": "punct_rle",
+          "raw": 0,
+          "zlib9": 0
+        },
+        "extract_marked_body": {
+          "label": "marked_prose_with_1B_holes",
+          "raw": 0,
+          "zlib9": 0
+        },
+        "extract_url_side": {
+          "label": "url_length_prefixed_side",
+          "raw": 0,
+          "zlib9": 0
+        },
+        "extract_markup_side": {
+          "label": "markup_length_prefixed_side",
+          "raw": 0,
+          "zlib9": 0
+        }
+      },
+      "rankings": {
+        "concat_plus_rle": {
+          "label": "concat_typed_streams_plus_type_rle",
+          "raw_orig": 95357321,
+          "raw_alt": 98896101,
+          "raw_delta": -3538780,
+          "zlib9_orig": 35433702,
+          "zlib9_alt": 36344729,
+          "zlib9_delta": -911027
+        },
+        "span_shuffle_split": {
+          "label": "typed_concat_live_vs_span_shuffle",
+          "raw_orig": 98896101,
+          "raw_alt": 98896101,
+          "raw_delta": 0,
+          "zlib9_orig": 36344729,
+          "zlib9_alt": 42186330,
+          "zlib9_delta": -5841601
+        },
+        "url_live_vs_shuf": {
+          "label": "url_concat_live_vs_span_shuffle",
+          "raw_orig": 2433736,
+          "raw_alt": 2433736,
+          "raw_delta": 0,
+          "zlib9_orig": 829240,
+          "zlib9_alt": 970677,
+          "zlib9_delta": -141437
+        },
+        "markup_live_vs_shuf": {
+          "label": "markup_concat_live_vs_span_shuffle",
+          "raw_orig": 31994725,
+          "raw_alt": 31994725,
+          "raw_delta": 0,
+          "zlib9_orig": 11472526,
+          "zlib9_alt": 13783951,
+          "zlib9_delta": -2311425
+        },
+        "prose_live_vs_shuf": {
+          "label": "prose_concat_live_vs_span_shuffle",
+          "raw_orig": 60928860,
+          "raw_alt": 60928860,
+          "raw_delta": 0,
+          "zlib9_orig": 22261875,
+          "zlib9_alt": 25651595,
+          "zlib9_delta": -3389720
+        },
+        "url_live_vs_byte_shuffle": {
+          "label": "url_concat_live_vs_byte_shuffle",
+          "raw_orig": 2433736,
+          "raw_alt": 2433736,
+          "raw_delta": 0,
+          "zlib9_orig": 829240,
+          "zlib9_alt": 1642668,
+          "zlib9_delta": -813428
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\vivi\\hutter\\data\\enwik8.3m",
+      "md5": "a3bf17ae9205c633352d94b5cf106184",
+      "file_bytes": 3000000,
+      "elapsed_s": 119.49,
+      "census": {
+        "pages": 384,
+        "body_bytes": 2828637,
+        "xml_shell_est": 171746,
+        "n_type_runs": 48870,
+        "n_url_runs": 1567,
+        "n_markup_runs": 23269,
+        "n_prose_runs": 24034,
+        "mass": {
+          "url": 73445,
+          "markup": 1163702,
+          "prose": 1591490,
+          "punct_byteclass": 155683,
+          "url_frac": 0.025964802129081956,
+          "markup_frac": 0.41140026097374816,
+          "prose_frac": 0.5626349368971699
+        },
+        "spans": {
+          "url": {
+            "n": 1567,
+            "unique": 1515,
+            "extra_copy_bytes": 2450,
+            "uniq_frac": 0.9668155711550734
+          },
+          "wikilink": {
+            "n": 29460,
+            "unique": 22009,
+            "extra_copy_bytes": 121174,
+            "uniq_frac": 0.747080787508486
+          },
+          "template": {
+            "n": 1522,
+            "unique": 1302,
+            "extra_copy_bytes": 2764,
+            "uniq_frac": 0.8554533508541393
+          },
+          "table": {
+            "n": 32,
+            "unique": 32,
+            "extra_copy_bytes": 0,
+            "uniq_frac": 1.0
+          },
+          "html_tags": {
+            "n": 0,
+            "bytes": 0
+          },
+          "www_no_scheme": {
+            "n": 1250,
+            "bytes": 46828
+          }
+        },
+        "url_prefix": {
+          "p16": {
+            "n_long_enough": 1566,
+            "unique_prefixes": 1018,
+            "extra_copy_bytes": 8768
+          },
+          "p24": {
+            "n_long_enough": 1418,
+            "unique_prefixes": 1098,
+            "extra_copy_bytes": 7680
+          },
+          "p32": {
+            "n_long_enough": 1139,
+            "unique_prefixes": 927,
+            "extra_copy_bytes": 6784
+          },
+          "host": {
+            "unique_hosts": 1164,
+            "host_extra_bytes": 6429,
+            "scheme_host_slash_extra": 9653,
+            "top_hosts": [
+              {
+                "host": "www.cia.gov",
+                "n": 22
+              },
+              {
+                "host": "www.gutenberg.org",
+                "n": 17
+              },
+              {
+                "host": "news.bbc.co.uk",
+                "n": 12
+              },
+              {
+                "host": "www.loc.gov",
+                "n": 11
+              },
+              {
+                "host": "www.ncbi.nlm.nih.gov",
+                "n": 9
+              },
+              {
+                "host": "www.pbs.org",
+                "n": 8
+              },
+              {
+                "host": "memory.loc.gov",
+                "n": 8
+              },
+              {
+                "host": "history.nasa.gov",
+                "n": 8
+              }
+            ]
+          }
+        },
+        "url_gaps": {
+          "n": {
+            "first": 1,
+            "gap_le_32k": 1553,
+            "gap_32k_8m": 13,
+            "gap_gt_8m": 0
+          },
+          "bytes": {
+            "first": 63,
+            "gap_le_32k": 72835,
+            "gap_32k_8m": 547,
+            "gap_gt_8m": 0
+          }
+        },
+        "markup_span_counts": {
+          "tables": 32,
+          "templates": 1522,
+          "wikilinks": 29460,
+          "html_tags": 0
+        },
+        "letter": {
+          "url": {
+            "raw": 73445,
+            "letters": 56108,
+            "other": 17337,
+            "dic_covered": 50870,
+            "leftover_letters": 5238,
+            "dic_words": 12062,
+            "letter_frac": 0.7639458097896386,
+            "cover_frac_of_letters": 0.9066443287944678
+          },
+          "markup": {
+            "raw": 1163702,
+            "letters": 796197,
+            "other": 367505,
+            "dic_covered": 743413,
+            "leftover_letters": 52784,
+            "dic_words": 146966,
+            "letter_frac": 0.6841932041020811,
+            "cover_frac_of_letters": 0.9337048494279682
+          },
+          "prose": {
+            "raw": 1591490,
+            "letters": 1203272,
+            "other": 388218,
+            "dic_covered": 1174299,
+            "leftover_letters": 28973,
+            "dic_words": 245406,
+            "letter_frac": 0.7560663277808846,
+            "cover_frac_of_letters": 0.9759214874109927
+          },
+          "bodies": {
+            "raw": 2828637,
+            "letters": 2055577,
+            "other": 773060,
+            "dic_covered": 1968596,
+            "leftover_letters": 86981,
+            "dic_words": 404436,
+            "letter_frac": 0.7267022951336634,
+            "cover_frac_of_letters": 0.9576853603635378
+          }
+        }
+      },
+      "independent": {
+        "zlib9_mixed": 1048456,
+        "zlib9_url": 25574,
+        "zlib9_markup": 415154,
+        "zlib9_prose": 581884,
+        "zlib9_rle": 51722,
+        "zlib9_sum_typed_plus_rle": 1074334,
+        "zlib9_delta_indep": -25878,
+        "lzma6_mixed": 827312,
+        "lzma6_url": 23820,
+        "lzma6_markup": 338176,
+        "lzma6_prose": 475172,
+        "lzma6_rle": 43392,
+        "lzma6_sum_typed_plus_rle": 880560,
+        "lzma6_delta_indep": -53248
+      },
+      "streams": {
+        "url": {
+          "label": "url_concat",
+          "raw": 73445,
+          "zlib9": 25574,
+          "lzma6": 23820
+        },
+        "markup": {
+          "label": "markup_concat",
+          "raw": 1163702,
+          "zlib9": 415154,
+          "lzma6": 338176
+        },
+        "prose": {
+          "label": "prose_concat",
+          "raw": 1591490,
+          "zlib9": 581884,
+          "lzma6": 475172
+        },
+        "type_rle": {
+          "label": "type_rle",
+          "raw": 101350,
+          "zlib9": 51722,
+          "lzma6": 43392
+        },
+        "punct": {
+          "label": "punct_[]{}|=",
+          "raw": 155683,
+          "zlib9": 11859
+        },
+        "punct_rle": {
+          "label": "punct_rle",
+          "raw": 350572,
+          "zlib9": 92359
+        },
+        "extract_marked_body": {
+          "label": "marked_prose_with_1B_holes",
+          "raw": 1616326,
+          "zlib9": 588530
+        },
+        "extract_url_side": {
+          "label": "url_length_prefixed_side",
+          "raw": 75029,
+          "zlib9": 27616
+        },
+        "extract_markup_side": {
+          "label": "markup_length_prefixed_side",
+          "raw": 1187284,
+          "zlib9": 441006
+        }
+      },
+      "rankings": {
+        "extract_to_tail": {
+          "label": "phda9_analog_extract_url_markup_tails",
+          "raw_orig": 2828637,
+          "raw_alt": 2878639,
+          "raw_delta": -50002,
+          "zlib9_orig": 1048456,
+          "zlib9_alt": 1057079,
+          "zlib9_delta": -8623,
+          "lzma6_orig": 827312,
+          "lzma6_alt": 841576,
+          "lzma6_delta": -14264
+        },
+        "concat_plus_rle": {
+          "label": "concat_typed_streams_plus_type_rle",
+          "raw_orig": 2828637,
+          "raw_alt": 2929987,
+          "raw_delta": -101350,
+          "zlib9_orig": 1048456,
+          "zlib9_alt": 1074629,
+          "zlib9_delta": -26173,
+          "lzma6_orig": 827312,
+          "lzma6_alt": 861492,
+          "lzma6_delta": -34180
+        },
+        "tagged_inorder": {
+          "label": "inorder_type_tags_plus_payload",
+          "raw_orig": 2828637,
+          "raw_alt": 2929987,
+          "raw_delta": -101350,
+          "zlib9_orig": 1048456,
+          "zlib9_alt": 1118306,
+          "zlib9_delta": -69850,
+          "lzma6_orig": 827312,
+          "lzma6_alt": 879436,
+          "lzma6_delta": -52124
+        },
+        "punct_byteclass": {
+          "label": "punct_[]{}|=_plus_rest_plus_rle",
+          "raw_orig": 2828637,
+          "raw_alt": 3179209,
+          "raw_delta": -350572,
+          "zlib9_orig": 1048456,
+          "zlib9_alt": 1104145,
+          "zlib9_delta": -55689,
+          "lzma6_orig": 827312,
+          "lzma6_alt": 876504,
+          "lzma6_delta": -49192
+        },
+        "wrt_proxy_split": {
+          "label": "wrt_proxy_mixed_vs_typed_concat",
+          "raw_orig": 1668913,
+          "raw_alt": 1668923,
+          "raw_delta": -10,
+          "zlib9_orig": 833911,
+          "zlib9_alt": 814945,
+          "zlib9_delta": 18966
+        },
+        "nonletter_residue": {
+          "label": "nonletter_mixed_vs_typed_concat",
+          "raw_orig": 773060,
+          "raw_alt": 773060,
+          "raw_delta": 0,
+          "zlib9_orig": 196951,
+          "zlib9_alt": 180628,
+          "zlib9_delta": 16323,
+          "lzma6_orig": 165116,
+          "lzma6_alt": 154072,
+          "lzma6_delta": 11044
+        },
+        "span_shuffle_split": {
+          "label": "typed_concat_live_vs_span_shuffle",
+          "raw_orig": 2929987,
+          "raw_alt": 2929987,
+          "raw_delta": 0,
+          "zlib9_orig": 1074629,
+          "zlib9_alt": 1213540,
+          "zlib9_delta": -138911,
+          "lzma6_orig": 861492,
+          "lzma6_alt": 910168,
+          "lzma6_delta": -48676
+        },
+        "url_live_vs_shuf": {
+          "label": "url_concat_live_vs_span_shuffle",
+          "raw_orig": 73445,
+          "raw_alt": 73445,
+          "raw_delta": 0,
+          "zlib9_orig": 25574,
+          "zlib9_alt": 26677,
+          "zlib9_delta": -1103,
+          "lzma6_orig": 23820,
+          "lzma6_alt": 24432,
+          "lzma6_delta": -612
+        },
+        "markup_live_vs_shuf": {
+          "label": "markup_concat_live_vs_span_shuffle",
+          "raw_orig": 1163702,
+          "raw_alt": 1163702,
+          "raw_delta": 0,
+          "zlib9_orig": 415154,
+          "zlib9_alt": 477372,
+          "zlib9_delta": -62218,
+          "lzma6_orig": 338176,
+          "lzma6_alt": 357960,
+          "lzma6_delta": -19784
+        },
+        "prose_live_vs_shuf": {
+          "label": "prose_concat_live_vs_span_shuffle",
+          "raw_orig": 1591490,
+          "raw_alt": 1591490,
+          "raw_delta": 0,
+          "zlib9_orig": 581884,
+          "zlib9_alt": 658891,
+          "zlib9_delta": -77007,
+          "lzma6_orig": 475172,
+          "lzma6_alt": 504340,
+          "lzma6_delta": -29168
+        },
+        "url_live_vs_byte_shuffle": {
+          "label": "url_concat_live_vs_byte_shuffle",
+          "raw_orig": 73445,
+          "raw_alt": 73445,
+          "raw_delta": 0,
+          "zlib9_orig": 25574,
+          "zlib9_alt": 49123,
+          "zlib9_delta": -23549
+        }
+      }
+    }
+  ]
+}

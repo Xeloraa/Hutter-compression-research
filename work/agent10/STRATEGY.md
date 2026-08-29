@@ -14,12 +14,12 @@ the moving 1% gate (**109,685,197**).
 
 Prefer A. Reject C.
 
-## Ranked A-list (A2/A3/A4 dead)
+## Ranked A-list (A2–A5 dead; A1 only)
 
 | rank | item | expected enwik9 ΔS | next measurement | class |
 |---|---|---|---|---|
 | **1** | **A1** tree head **with** `SetInput`, freeze stock 170c/1L/h=128, inside **cmix-lex** | 0 (neutral) or **50–300 KB** (not 1.1 MB); or archive grows | Linux 10–30 MB full-stack A/B (`A1_PATCH.md`) | **A** (only live A) |
-| 2 | **A5** typed body streams (URL + wiki-markup vs prose) — PHDA9 does not split the body | unknown; URL mass 2.43 MB on enwik8 but 97.6% unique | cheap zlib/lzma of split vs original (`A4.md` “Next A”) | **A question, not run** |
+| — | A5 typed body streams | **≤0** as a split (zlib concat **−911 KB** on enwik8) | done (`A5.md`) | **killed as A** |
 | 3 | A2 leftover: post-WRT tail D99 autopsy (regime 2 bytes we have not seen) | unknown; raw analogs already died | Linux `cmix -s` dump, no 43 h compress | **B** |
 | — | A4 title-index `[[Target]]` → in-band page varint | 50–150 KB after overlap (zlib kept 25 KB / 967 KB raw) | done (`A4.md`) | **killed as A** |
 | — | A3 dump aliases / second WRT / File: / navbox / table columns / infobox-by-key | tens of KB | done (`A3.md`) | **killed as A** |
@@ -42,6 +42,10 @@ replay of payload_lex or an LSTM **hyperparam** sweep.
   zlib **+25,266** on a **967,199** raw cut. Span lzma **+17,264**.
   Shuffled page-ids match live. Dangling extra copies (4.86 MB) are the
   A2 link-list mass. Lead-bold 96 KB is match-owned.
+- A5 **not** a leftover MB. Concatenating URL/markup/prose **loses 911 KB
+  zlib** on enwik8 bodies vs mixed. Type-RLE does not pay. Extract-to-tail
+  loses on the 3 MB slice. Shuffle-within-type *does* hurt (order is real)
+  but interleaved dump order already wins. See `A5.md`.
 
 ## Parked G5 — lastCW as LSTM `input_symbol` (supporting / C)
 
@@ -61,8 +65,8 @@ until someone does. Then stop; do not implement on a hope.
 
 Linux **A1** A/B per `A1_PATCH.md`. This machine has no WSL — spec only.
 
-If A1 is in flight elsewhere: the next cheap filter is **A5** (typed body
-streams), not another 3 MB `cmp` and not a lastCW LSTM patch.
+If A1 is in flight elsewhere: there is **no remaining cheap A filter** on
+this Windows box. A5 is dead. Do not invent another 3 MB `cmp`.
 
 Do not start E32, E35, E36, E41, width sweeps, or another 3 MB `cmp`.
 Do not drop in `BtLstm` aux=0 92c/3L.
